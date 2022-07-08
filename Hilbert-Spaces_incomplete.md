@@ -177,7 +177,7 @@ It also has a length (often called a magnitude) which is defined as the shortest
 
 ![magnitude-of-a-vector](https://user-images.githubusercontent.com/47701869/178015829-b42d96aa-d09a-46b9-872c-8789ad771963.png)
 
-* Any vector with a vector space can be completely described by the vector space basis. Let’s give a real-life analogy here:
+* Any vector within a vector space can be completely described by the vector space basis. Let’s give a real-life analogy here:
 
 Assume you work in a fast food delivery service and you want to deliver a pizza from the restaurant at point A to the customer residence at point B.
 
@@ -219,7 +219,7 @@ For example if you have 3 vectors a, b and c then it doesn't matter if you start
 $$ (a+b)+c=a+(b+c)$$
 
 3. You can change the length/magnitude of a vector by multiplying its components along the basis directions with a constant number.
-The constant number could be a positive real or a negative real number, then the vector space is called a **Real Vector Space**.
+The constant number could be a real positive or a real negative number in which case the vector space is called a **Real Vector Space**.
 The constant number could also be a complex number, in which case the vector space is called a **Complex Vector Space**
 This constant number is usually known as a **scalar**. The image below shows an example of scalar multiplication in a **Real Vector Space**
 
@@ -230,7 +230,7 @@ to multiplying a and b individually with the same scalar:
 
 $$ \alpha (a+b)= \alpha a + \alpha b $$
 
-5. You can subtract two vectors a nad b from each other by multiplying one of them by a scalar that is equal to -1. This can be stated as follows:
+5. You can subtract two vectors a and b from each other by multiplying one of them by a scalar that is equal to -1. This can be stated as follows:
 
 $$ a - b = a + (-1 * b)$$
 
