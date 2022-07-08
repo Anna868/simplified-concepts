@@ -234,10 +234,47 @@ $$ \alpha (a+b)= \alpha a + \alpha b $$
 
 $$ a - b = a + (-1 * b)$$
 
+6. The vector space is closed. Meaning that any vector that results from an operation of addition/subtraction/scalar multiplication still belongs to the same vector space as the operands
 ---
 
 ### 4) Normed Vector Spaces:
 
+* Normed Vector Spaces are vector spaces equipped with functions that calculate the length/magnitude of a vector as well as the distance between any two vectors in the vector space.
+
+* The norm functions can be considered as transformations as they take an input vector $\vec{u}$ and map it to a scalar (real positive number) ||u|| which represents the vector's length
+
+* The distance between any two vectors can be calculated first by getting the difference between the two vectors 
+$$\vec{d}=\vec{u}-\vec{v}$$
+then by getting the magnitude of the difference vector $\vec{d}$ which is ||d|| 
+
+* For a vector space with a finite number of dimensions N, a vector's norm/length/magnitude is calculated simply by following formula:
+$$ ||x||= (\sum_{i=1}^{N} (x_i)^p)^{1/p}$$
+
+If you are not familiar with mathematical notations like these, don't panic just yet! This is actually a very easy equation. 
+
+It tells you that for every dimension $i$ in your vector space, you will take the number associated with its direction in the vector notation $x_i$, and raise it to the power p.
+
+After doing so, you will add all numbers raised to the power p together. Finally, this sum ( which we call a cumulative sum over the index i ) is raised to the power $1/p$
+
+If you still do not understand it, let's do a little real life example.
+
+Suppose after delivering the pizza from the restaurant at point A to the customer residence at point B, you wish to calculate exactly the shortest distance between the two points A and B. You know from before when your manager described the route to you that the vector $\vec{AB}$ is given by:
+
+$$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
+
+You can now apply the equation above by taking each number in the vector and raising it to the power p, so you get $2^p$ , $1^p$ and $0.1^p$
+
+Next you sum all these numbers together, so you get:
+$$ s= 2^p + 1^p + 0.1^p$$
+
+Finally, the magnitude ||AB|| can be obtained by:
+$$||AB|| = s^{1/p} =(2^p + 1^p + 0.1^p)^{1/p}$$
+
+If you take $p=2$, this distance function will be very familiar. It becomes the Euclidean distance we dealt with a lot in high school !
+
+![Ew1hh7hWgAAPjcj (1)](https://user-images.githubusercontent.com/47701869/178077047-398b866f-addb-41ff-9d1f-9303e2cdaeeb.jpg)
+
+Except we are now dealing with three dimensional space, and each point along x, y and z directions is referenced to the zero point
 
 
 
