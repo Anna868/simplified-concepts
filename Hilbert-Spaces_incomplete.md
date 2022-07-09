@@ -391,7 +391,7 @@ We can see that after many steps into the sequence, the sequence converges towar
 
 
 4. When is the metric space complete?
-5. 
+
 A metric space is complete if any Cauchy sequence constructed from the metric space elements converges to a number/element that also fulfills the rules and conditions of the metric space and so is considered as a member of the metric space as well.
 In other words, if the limits of all possible Cauchy sequences lie **inside** the metric space then it is complete!
 
