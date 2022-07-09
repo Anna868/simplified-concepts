@@ -12,7 +12,7 @@ means.
 
 If you decide to study any topic related to quantum mechanics, you are going to read the words "Hilbert space" a lot. That’s our annoying jargon term.
 
-In fact, the enitrety of the mathematical foundation of quanutm mechanics takes place in the Hilbert space.
+In fact, the entirety of the mathematical foundation of quantum mechanics takes place in the Hilbert space.
 
 So what is a Hilbert space? and what is a mathematical space in general?
 
