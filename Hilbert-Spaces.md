@@ -12,8 +12,9 @@ means.
 
 If you decide to study any topic related to quantum mechanics, you are going to read the words "Hilbert space" a lot. That’s our annoying jargon term.
 
-For example, if we were to give the shortest possible definition of a qubit (if you decide to get into quantum computing), we would say
-"A qubit is a vector that belongs to an N dimensional Hilbert space"
+In fact, the enitrety of the mathematical foundation of quanutm mechanics takes place in the Hilbert space, whether we talk about quantum mechanical states representation or any operator algebra applied onto these states for measuring observables.
+
+And if you decide to get into quantum computing, the shortest possible definition of a qubit is that it is is a vector that belongs to an N dimensional Hilbert space 
 
 So what is a Hilbert space? and what is a mathematical space in general?
 
@@ -414,11 +415,32 @@ Sounds complicated and it is not expected of you to understand that right away! 
 
 * A vector space is metric complete if all the Cauchy sequences constructed from its vectors converge to a specific vector which also lies inside the vector space.
 
-* A vector space which is metric complete is known as a Banach space.
+* A vector space which is metric complete is also known as a Banach space.
 
 ----
 
+### 7) Hilbert Spaces:
 
+* Finally! We can define Hilbert spaces from our previous discussion!
+
+* A Hilbert space is:
+1. A Complex Vector Space
+2. Equipped with a Vector Norm 
+3. Equipped with a Vector inner Product
+4. Metric Complete.
+
+* Let's mention quickly the most important rules that are imposed inside a Hilbert space:
+
+1. For any two vectors w and v we can write the following inner product: ![image](https://user-images.githubusercontent.com/47701869/178099833-57195c49-8bc8-4cc5-82ce-898ec5b11165.png). Here the bar denotes the complex conjugate of the resulting vector. (See the Inner product vector spaces section!)
+
+2. The inner products in a Hilbert space are linear only in the first argument. If this is unclear in words, it can be better understood by the mathematical expression: ![image](https://user-images.githubusercontent.com/47701869/178104643-cb4a0283-91b3-4724-842f-1b04e7c25443.png) 
+where x1, x2, y are vectors whereas a and b are complex scalars. So if the first argument in the inner product is a linear combination of vectors, then the mutilplication with the second argument can be distributed on the linear components of the first argument.
+
+
+3. The inner products in a Hilbert space are anti-linear only in the second argument. If this is unclear in words, it can be better understood by the mathematical expression: ![image](https://user-images.githubusercontent.com/47701869/178105583-6b34196e-c168-458e-8c57-f1192f721eb7.png)
+where x1, x2, y are vectors whereas a and b are complex scalars. So if the second argument in the inner product is a linear combination of vectors, then the mutilplication with the first argument can be distributed on the linear components of the second argument provided we take the conjugate of the complex scalars first!
+
+4. The norm of a vector x inside a Hilbert space is given by ![image](https://user-images.githubusercontent.com/47701869/178105945-18b68bd1-997c-4211-85e3-8b580b5f0c01.png) and the distance between two vectors x and y in a Hilbert space is given by ![image](https://user-images.githubusercontent.com/47701869/178105967-be5b5e8a-6154-4fb9-9cad-460175fce60c.png)
 
 
 
