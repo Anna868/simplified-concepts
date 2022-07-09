@@ -324,6 +324,21 @@ $$ ||f||= (\int_a^b |f(x)|^p dx)^{1/p}$$
 
 ### 5) Inner Product Vector Spaces (Pre-Hilbert Spaces):
 
+* We saw that in Vector spaces, we can add together two vectors and we can also multiply vectors by scalars. In Normed Vector Spaces, we can do all that and also caluclate the length of a vector or the distance between any two vectors.
+
+* In Inner Product Vector Spaces, we can do every operation we can do inside a Normed Vector Space, but with the ability to multiply two vectors together!
+
+* Suppose you have two vectors called v and w, their inner product is expressed in the following notation <v, w> in angled brackets.
+
+* As always, there are rules imposed on the inner product of any two vectors. These rules must be respected in any Inner Product Vector Spaces:
+
+1. **Distributivity of Vector Muliplication:** This simply means that multiplying the vector v+w with u is equivalent to multiplying v with u and w with u then adding the two resulting vectors. This can written as: <v+w, u>= <v,u> +<w,u>
+
+2. **Distributivity of Scalar Multiplication:**  This simply means that multiplying the vector av with u when a is a scalar (constant number) is equivalent to multiplying v with u and then multiply the resulting vector with the scalar a. This can written as: <av, u>= a<v,u>
+
+3. **Commutativity of Vector Multiplication:** This simply means that the order of multiplication doesn't matter so <u,v>=<v,u>. However, this is only true for **Real Vector Spaces**. In **Complex Vector Spaces** the commutative property is rewritten to be: ![image](https://user-images.githubusercontent.com/47701869/178099833-57195c49-8bc8-4cc5-82ce-898ec5b11165.png). Here the bar denotes the complex conjugate of the resulting vector. An inner product vector space that satisfies the latter condition for complex vector is known as a **Hermitian Inner Product Space**. Keep that name in mind as you will read it a lot in literature as well 
+
+4. **Inner Products must be positive-definite:** This means that if you take the inner product of a vector v with itself,  you will get a number that is greater than or equal to zero <v,v> $\geq 0 $. This inner product is zero if and only if v is a zero vector (meaning that all its components are zero.
 
 
 
