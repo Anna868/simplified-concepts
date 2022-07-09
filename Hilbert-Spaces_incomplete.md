@@ -239,17 +239,20 @@ $$ a - b = a + (-1 * b)$$
 
 ### 4) Normed Vector Spaces:
 
-* Normed Vector Spaces are vector spaces equipped with functions that calculate the length/magnitude of a vector as well as the distance between any two vectors in the vector space.
+* Normed Vector Spaces are vector spaces equipped with functions that calculate:
+1. the length/magnitude of a vector
+2. the distance between any two vectors in the vector space.
 
-* The norm functions can be considered as transformations as they take an input vector $\vec{u}$ and map it to a scalar (real positive number) ||u|| which represents the vector's length
+* The norm functions take an input vector $\vec{u}$ which has as many numbers as the basis vectors of the vector space, and then map it to a single real positive number ||u|| which represents the vector's length/magnitude
 
-* The distance between any two vectors can be calculated first by getting the difference between the two vectors 
-$$\vec{d}=\vec{u}-\vec{v}$$
-then by getting the magnitude of the difference vector $\vec{d}$ which is ||d|| 
+* The distance between any two vectors $u$ and $v$ can be calculated through the following steps:
+1. get the difference between the two vectors  $$\vec{d}=\vec{u}-\vec{v}$$
+2. get the magnitude of the difference vector $\vec{d}$ which is ||d|| 
+3. ||d|| is equivalent to the distance between the two vectors
 
-* In case the vector is mulitiplied by a scalar, the magnitude of the vector is also scaled by the same scalar. This can be expressed as:
+* In case the vector is mulitiplied by a constant number (scalar), the magnitude of the vector is also scaled by the same number. This can be expressed as:
 $$ || \gamma \vec{d} ||= |\gamma| . ||\vec{d}|| $$
-The reason why the scalar is denoted as $|\gamma|$ is because it could be a complex number in the case of **Complex Vector Spaces** and we have to deal with the magnitude of that complex number.
+Generally, $\gamma$ could be a real or a complex number. In case of complex numbers, we have to use their magnitude. This is the reason why the scalar is denoted as $|\gamma|$ is because it could be a complex number in the case of **Complex Vector Spaces**. 
 
 * For a vector space with a finite number of dimensions N, a vector's norm/length/magnitude is calculated simply by following formula:
 $$ ||x||= (\sum_{i=1}^{N} (x_i)^p)^{1/p}$$
@@ -258,7 +261,7 @@ If you are not familiar with mathematical notations like these, don't panic just
 
 Let's do a little real life example to understand the equation:
 
-Suppose after delivering the pizza from the restaurant at point A to the customer residence at point B, you wish to calculate exactly the shortest distance between the two points A and B. You know from before when your manager described the route to you that the vector $\vec{AB}$ is given by:
+Suppose after delivering the pizza from the restaurant at point A to the customer residence at point B, you wish to calculate exactly the shortest distance between the two points A and B. You know from before that the vector $\vec{AB}$ is given by:
 
 $$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
 
@@ -276,33 +279,50 @@ $$||AB||=\sqrt{2^2+1^2+0.1^2}=\sqrt{4+1+0.01}=2.34$$
 
 It becomes the Euclidean distance we dealt with a lot in high school !
 
-* When $p=1$ then we are computing the Manhattan Norm, when $p=2$ we are computing the Euclidean Norm, and when $p>= 3$ we are computing the Minkowski Norm. These are just the names for different cases of $p$ that you might encounter in your readings.
+* There are 3 most notable cases for the number $p$ you should be aware of:
+1. When $p=1$ then we are computing a norm called the Manhattan Norm,
+2. When $p=2$ then we are computing a norm the Euclidean Norm,
+3. We can generalize the norm equation by using p greater than 2 with no upper limit on p so that $ p \rightarrow \infty$ is a possible limit (in other words p could get very big!). In this case we are computing a norm called the Minkowski Norm.
 
 * When $p \rightarrow \infty$ , then the norm becomes simply the largest number in the vector. So in the last example, if the vector is given by
 $$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
 and we will compute the Manhattan Norm with $p \rightarrow \infty$ so ||AB||=2
 
-* If we try to visualize the norm equation in a 2D vector space, we will get the following shapes for $p=1$, $p=2$, $p=3$ and $p \rightarrow \infty$
+* Let's try to visualize the norm equation to get more sense of what is going on.
+
+We will compute norms for a 2D vector space. And suppose in this space, we want to find all the vectors who length/magnitude/norm is equal to 1, so we need to solve the following equation:
+
+$$ 1= (\sum_{i=1}^{N} (x_i)^p)^{1/p}$$
+
+If we vary the value of $p$ to be $p=1$, $p=2$, $p=3$ and $p \rightarrow \infty$, we will get the shapes shown in the image below.
 
 ![lp_norms_2d](https://user-images.githubusercontent.com/47701869/178084458-d9eb3a4d-e2bc-4adb-a2a3-25692b93ed7e.jpg)
 
-These shapes are obtained when we set ||x||=1 in the norm equation for any vector x.
 This means that any vector that starts from the origin point (0,0) and ends on the shape boundary has a norm that is equal to 1. 
+so for example, if $p=1$, then any vector which starts at the center and ends on the diamond shape has a length of 1 unit. And if $p=2$, then any vector which starts at the center and ends on the circle has a length of 1 unit. As p increases above $p=2$, the circle flattens slowly till it becomes a square for $p=100$ which is considered $p \rightarrow \infty$
 
-We can repeat the same visualization for a 3D vector space:
+We can repeat the same visualization for a 3D vector space so we get 3D surfaces instead of 2D shapes. Any vector which starts at the point (0,0,0) and ends on any 3D surface corresponding to $p=1$, $p=2$, $p=3$ and $p \rightarrow \infty$ has a length of 1 unit.
 ![lp_norms_3d](https://user-images.githubusercontent.com/47701869/178084559-b25420b2-bdcb-4dc2-8cf0-c48f995a92d2.jpg)
 
 * By now you might be wondering if there any conditions on the value of p. Turns out that there is!
-For our chosen p, the norm equation must fulfill what is known as the triangle inequality. This inequality is defined for two vectors x and y as:
+For our chosen p, the norm equation must fulfill what is known as the triangle inequality. This inequality is defined as follows for two vectors x and y as:
 
 $$ ||\vec{x}+ \vec{y} || \leq ||\vec{x}||+ ||\vec{y} ||$$
 
 This inequality simply states that no side in a triangle formed by 3 vectors can have a length that is greater than the sum of the other two sides. This is visualized in the image below:
 ![300px-Vector-triangle-inequality svg (1)](https://user-images.githubusercontent.com/47701869/178085520-bd067010-4abf-4d27-ab53-afc23d9fcc03.png)
 
-for $0 \leq p  < 1$ the triangle inequality is not fulfilled and so this range for p values cannot be used!
+for $0 \leq p  < 1$ the triangle inequality is not fulfilled and so $p$ must be larger than 1!
 
-* One final note on Normed Vector Spaces is that they needn't have finite dimensions. They can have inifinite dimensions, that is, $N \rightarrow \infty$. In this case the norm equation turns into an integral (discrete sum operation becomes continuous!):
+* One final note on Normed Vector Spaces is that they needn't have finite dimensions. They can have inifinite dimensions, that is, $N \rightarrow \infty$. This is actually a very interesting case in many mathematical and physical problems especially in continuous-variable quantum mechanics.
+
+In this case, our vectors become continuous functions and we need to map them to a single real number which is the function's norm by the following equation:
+
+$$ ||f||= (\int_a^b |f(x)|^p dx)^{1/p}$$
+
+---
+
+### 5) Inner Product Vector Spaces (Pre-Hilbert Spaces):
 
 
 
