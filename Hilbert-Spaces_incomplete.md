@@ -340,6 +340,60 @@ $$ ||f||= (\int_a^b |f(x)|^p dx)^{1/p}$$
 
 4. **Inner Products must be positive-definite:** This means that if you take the inner product of a vector v with itself,  you will get a number that is greater than or equal to zero <v,v> $\geq 0 $. This inner product is zero if and only if v is a zero vector (meaning that all its components are zero.
 
+* The nice thing about the inner product formualtion is that it allows us to neatly write the vector norm (when p=2) in terms of inner products as follows: ![image](https://user-images.githubusercontent.com/47701869/178100279-9532bff1-2084-4842-ada3-fef5a504eaeb.png)
+
+* Similarly, it is possible to write the distance between any two vectors as the square root of the following function: ![image](https://user-images.githubusercontent.com/47701869/178100393-7380d1d7-892a-4ac4-ad39-9a8bcd26f237.png)
+
+* Now, you may have noticed that the title of this section says *pre-Hilbert Spaces*. This is because Hilbert spaces are Inner Product Vector spaces but which also happen to be complete Metric Spaces. So this means that Hilbert spaces are inner product vector spaces with a completeness condition!
+
+----
+
+### 6) Complete Metric Spaces and Banach Spaces:
+
+* As we stated before, a Hilbert space is not only an inner product vector space but it is also a complete metric space.
+
+* Let's state the definition of a complete metric space, which might contain some mathematical jargon, and then explain that jargon away step by step.
+
+* A metric space is complete if every possible Cauchy Sequence of the metric space points converges to a point that is also inside the metric space.
+Sounds complicated and it is not expected of you to understand that right away! So let's try to understand it part by part.
+
+1. What is a Mathematical Sequence?
+
+First of all, a sequence is a list of *ordered* numbers so 1,2,3.. is a sequences with a constant step of 1 for example. 
+
+A famous sequence is the Fibonacci sequence 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144, 233.. with an obvious varying step but with a very clear pattern that allows us to to predict the next elements of the sequence.
+
+
+2. What are the types of Mathematical Sequences?
+
+I will answer this question from the presepctive of **convergence**.  A mathematical sequence has two types: either it is a convergent sequence or a divergent sequence.
+
+Divergent sequences are easy to understand, they are simply sequences with no end. So for example I can count 1,2,3... up to infinity. If I don't stop counting, then there is no external condition imposed on me to stop counting.
+
+The Fibonacci sequence is very clearly a **divergent** sequence as well, as its elements keep getting larger and larger. If we visualize this sequence in the image below we can clearly see that the spiral keeps getting bigger and bigger.
+
+![main-qimg-c80b9d8a417137d6e4a7be6fb828c184-lq](https://user-images.githubusercontent.com/47701869/178101626-9da5e04f-7c4a-4fb4-987d-ca79847e7541.jpg)
+
+Convergent sequences on the other hand have an ending condition. After a number of steps they reach a number or an element which would not change no matter how many steحs we take after we reach it.
+
+We call this ending number/element the **Limit of the Mathematical Sequence**. Convergence to the limit can happen in a finite or inifinite amount of steps in the sequence.
+
+
+3. What is a Cauchy Sequence?
+
+A Cauchy Sequence is a sequence of numbers that become closer to each other as we take more steps into the sequence. In the image below, a Cauchy Sequence is visualized
+
+![Cauchy_sequence_illustration svg](https://user-images.githubusercontent.com/47701869/178102322-cc167902-953a-493b-890b-82ffc4136848.jpg)
+
+Xn (the blue dots) are the sequence numbers and the n axis represents the step number into the sequence (step 1, step 2..etc). You can clearly see how the blue dots come closer to each other with respect to the vertical direction as we take more steps into the sequence. This is also clarified by the red dotted lines which show us how the sequence converges.
+
+We can see that after many steps into the sequence, the sequence converges towards a certain value. So the Cauchy sequence is a convergent sequence.
+
+
+4. When is the metric space complete?
+5. 
+A metric space is complete if any Cauchy sequence constructed from the metric space elements converges to a number/element that also fulfills the rules and conditions of the metric space and so is considered as a member of the metric space as well.
+In other words, if the limits of all possible Cauchy sequences lie **inside** the metric space then it is complete!
 
 
 
