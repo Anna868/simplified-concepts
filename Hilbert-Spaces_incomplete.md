@@ -284,6 +284,11 @@ and we will compute the Manhattan Norm with $p \rightarrow \infty$ then ||AB||=2
 
 ![image](https://user-images.githubusercontent.com/47701869/178083801-c119d099-577e-4fe4-a822-c6fe2025ce9d.png)
 
+These shapes are obtained when we set ||x||=1 in the norm equation. This means that any vector that starts from the origin point (0,0) and ends on the shape boundary has a norm that is equal to 1. 
+
+We can repeat the same visualization for a 3D vector space:
+![image](https://user-images.githubusercontent.com/47701869/178084313-c8a7ef12-da99-4696-a53a-b88a5ee8638e.png)
+
 * One final note on Normed Vector Spaces that you have to keep in mind is that they needn't have finite dimensions. They can have inifinite dimensions, that is, $N \rightarrow \infty$. In this case the norm equation turns into an integral (discrete sum operation becomes continuous!):
 
 
