@@ -127,8 +127,7 @@ far from each other) using a set of rules which are shown in the image below. (I
 * If the points inside the metric space are represented by N numbers then the metric space is N dimensional,
 For example: if the points are represented by 2 numbers then the metric space is two dimensional and so on.
 
-*  Each metric space contains a function which takes two points in the metric space and computes a distance between them.
-Two very popular distance functions are the Euclidean distance and the Minkowski distance. 
+*  Each metric space contains a function which takes two points in the metric space and computes a distance between them. 
 
 ![metric](https://user-images.githubusercontent.com/47701869/178008178-ac9208e9-01a2-4d08-99f1-c81b63940220.jpg)
 
