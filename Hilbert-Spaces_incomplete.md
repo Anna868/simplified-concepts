@@ -280,6 +280,10 @@ Except we are now dealing with three dimensional space, and each point along x, 
 $$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
 and we will compute the Manhattan Norm with $p \rightarrow \infty$ then ||AB||=2
 
+* If we try to visualize the norm equation in 2 dimensional vector space, we will get the following shapes for $p=0.5$, $p=1$, $p=2$, $p=3$ and $p \rightarrow \infty$
+
+![image](https://user-images.githubusercontent.com/47701869/178083801-c119d099-577e-4fe4-a822-c6fe2025ce9d.png)
+
 * One final note on Normed Vector Spaces that you have to keep in mind is that they needn't have finite dimensions. They can have inifinite dimensions, that is, $N \rightarrow \infty$. In this case the norm equation turns into an integral (discrete sum operation becomes continuous!):
 
 
