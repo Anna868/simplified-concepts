@@ -274,9 +274,13 @@ If you take $p=2$, this distance function will be very familiar. It becomes the 
 
 Except we are now dealing with three dimensional space, and each point along x, y and z directions is referenced to the zero point
 
-![Ew1hh7hWgAAPjcj (1)](https://user-images.githubusercontent.com/47701869/178077047-398b866f-addb-41ff-9d1f-9303e2cdaeeb.jpg)
+* When $p=1$ then we are computing the Manhattan Norm, when $p=2$ we are computing the Euclidean Norm, and when $p>= 3$ we are computing the Minkowski Norm. These are just the names for different cases of $p$ that you might encounter in your readings.
 
-* When $p=1$ then we are computing 
+* When $p \rightarrow \infty$ , then the norm becomes simply the largest number in the vector. So in the last example, if the vector is given by
+$$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
+and we will compute the Manhattan Norm with $p \rightarrow \infty$ then ||AB||=2
+
+* One final note on Normed Vector Spaces that you have to keep in mind is that they needn't have finite dimensions. They can have inifinite dimensions, that is, $N \rightarrow \infty$. In this case the norm equation turns into an integral (discrete sum operation becomes continuous!):
 
 
 
