@@ -270,26 +270,39 @@ $$ s= 2^p + 1^p + 0.1^p$$
 Finally, the magnitude ||AB|| can be obtained by:
 $$||AB|| = s^{1/p} =(2^p + 1^p + 0.1^p)^{1/p}$$
 
-If you take $p=2$, this distance function will be very familiar. It becomes the Euclidean distance we dealt with a lot in high school !
+If you take $p=2$, this distance function will be very familiar:
 
-Except we are now dealing with three dimensional space, and each point along x, y and z directions is referenced to the zero point
+$$||AB||=\sqrt{2^2+1^2+0.1^2}=\sqrt{4+1+0.01}=2.34$$
+
+It becomes the Euclidean distance we dealt with a lot in high school !
 
 * When $p=1$ then we are computing the Manhattan Norm, when $p=2$ we are computing the Euclidean Norm, and when $p>= 3$ we are computing the Minkowski Norm. These are just the names for different cases of $p$ that you might encounter in your readings.
 
 * When $p \rightarrow \infty$ , then the norm becomes simply the largest number in the vector. So in the last example, if the vector is given by
 $$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
-and we will compute the Manhattan Norm with $p \rightarrow \infty$ then ||AB||=2
+and we will compute the Manhattan Norm with $p \rightarrow \infty$ so ||AB||=2
 
-* If we try to visualize the norm equation in 2 dimensional vector space, we will get the following shapes for $p=0.5$, $p=1$, $p=2$, $p=3$ and $p \rightarrow \infty$
+* If we try to visualize the norm equation in a 2D vector space, we will get the following shapes for $p=1$, $p=2$, $p=3$ and $p \rightarrow \infty$
 
-![image](https://user-images.githubusercontent.com/47701869/178083801-c119d099-577e-4fe4-a822-c6fe2025ce9d.png)
+![lp_norms_2d](https://user-images.githubusercontent.com/47701869/178084458-d9eb3a4d-e2bc-4adb-a2a3-25692b93ed7e.jpg)
 
-These shapes are obtained when we set ||x||=1 in the norm equation. This means that any vector that starts from the origin point (0,0) and ends on the shape boundary has a norm that is equal to 1. 
+These shapes are obtained when we set ||x||=1 in the norm equation for any vector x.
+This means that any vector that starts from the origin point (0,0) and ends on the shape boundary has a norm that is equal to 1. 
 
 We can repeat the same visualization for a 3D vector space:
-![image](https://user-images.githubusercontent.com/47701869/178084313-c8a7ef12-da99-4696-a53a-b88a5ee8638e.png)
+![lp_norms_3d](https://user-images.githubusercontent.com/47701869/178084559-b25420b2-bdcb-4dc2-8cf0-c48f995a92d2.jpg)
 
-* One final note on Normed Vector Spaces that you have to keep in mind is that they needn't have finite dimensions. They can have inifinite dimensions, that is, $N \rightarrow \infty$. In this case the norm equation turns into an integral (discrete sum operation becomes continuous!):
+* By now you might be wondering if there any conditions on the value of p. Turns out that there is!
+For our chosen p, the norm equation must fulfill what is known as the triangle inequality. This inequality is defined for two vectors x and y as:
+
+$$ ||\vec{x}+ \vec{y} || \leq ||\vec{x}||+ ||\vec{y} ||$$
+
+This inequality simply states that no side in a triangle formed by 3 vectors can have a length that is greater than the sum of the other two sides. This is visualized in the image below:
+![300px-Vector-triangle-inequality svg (1)](https://user-images.githubusercontent.com/47701869/178085520-bd067010-4abf-4d27-ab53-afc23d9fcc03.png)
+
+for $0 \leq p  < 1$ the triangle inequality is not fulfilled and so this range for p values cannot be used!
+
+* One final note on Normed Vector Spaces is that they needn't have finite dimensions. They can have inifinite dimensions, that is, $N \rightarrow \infty$. In this case the norm equation turns into an integral (discrete sum operation becomes continuous!):
 
 
 
