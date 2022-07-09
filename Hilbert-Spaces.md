@@ -14,8 +14,6 @@ If you decide to study any topic related to quantum mechanics, you are going to 
 
 In fact, the enitrety of the mathematical foundation of quanutm mechanics takes place in the Hilbert space.
 
-And if you decide to get into quantum computing, the shortest possible definition of a qubit is that it is is a vector that belongs to an N dimensional Hilbert space 
-
 So what is a Hilbert space? and what is a mathematical space in general?
 
 ---
