@@ -249,10 +249,13 @@ $$ a - b = a + (-1 * b)$$
 3. ||d|| is equivalent to the distance between the two vectors
 
 * In case the vector is mulitiplied by a constant number (scalar), the magnitude of the vector is also scaled by the same number. This can be expressed as:
+
 $$ || \gamma \vec{d} ||= |\gamma| . ||\vec{d}|| $$
+
 Generally, $\gamma$ could be a real or a complex number. In case of complex numbers, we have to use their magnitude. This is the reason why the scalar is denoted as $|\gamma|$ is because it could be a complex number in the case of **Complex Vector Spaces**. 
 
 * For a vector space with a finite number of dimensions N, a vector's norm/length/magnitude is calculated simply by following formula:
+
 $$ ||x||= (\sum_{i=1}^{N} (x_i)^p)^{1/p}$$
 
 If you are not familiar with mathematical notations like these, don't panic just yet! This is actually a very easy equation. 
@@ -266,6 +269,7 @@ $$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
 You can now apply the equation above by taking each number in the vector and raising it to the power p, so you get $2^p$ , $1^p$ and $0.1^p$
 
 Next you sum all these numbers together, so you get:
+
 $$ s= 2^p + 1^p + 0.1^p$$
 
 Finally, the magnitude ||AB|| can be obtained by:
@@ -283,7 +287,9 @@ It becomes the Euclidean distance we dealt with a lot in high school !
 3. We can generalize the norm equation by using p greater than 2 with no upper limit on p so that $ p \rightarrow \infty$ is a possible limit (in other words p could get very big!). In this case we are computing a norm called the Minkowski Norm.
 
 * When $p \rightarrow \infty$ , then the norm becomes simply the largest number in the vector. So in the last example, if the vector is given by
+
 $$ \vec{AB}= 2 \hat{x}+ 1 \hat{y}+0.1 \hat{z}$$
+
 and we will compute the Manhattan Norm with $p \rightarrow \infty$ so ||AB||=2
 
 * Let's try to visualize the norm equation to get more sense of what is going on.
