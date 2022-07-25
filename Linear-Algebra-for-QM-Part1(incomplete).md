@@ -33,6 +33,9 @@ Think of this as your first time trying to hold a pen to write your first gramma
 Note: Although there were some equations in my previous post on [Hilbert Spaces](https://github.com/Anna868/simplified-concepts/blob/main/Hilbert-Spaces.md), there weren’t any formal introduction to the notations
 of linear algebraic expressions in Quantum Mechanics. The equations were beside the point; but in this post they are the main objective.
 
+By the end of this post, you should understand a little bit about this Schrodinger's cat meme!
+![image](https://user-images.githubusercontent.com/47701869/180876474-ecdf9c74-af76-442c-ae1a-a2e8493331c4.png)
+
 
 ## Vectors and the Dirac (Bra-Ket Notation):
 
@@ -319,7 +322,8 @@ $$ \mathbf{B}: \mathbf{W} \rightarrow \mathbf{X} $$
 
 $$ \mathbf{B}(\mathbf{A}(|v>)) \equiv \mathbf{B}\mathbf{A}|v>$$
 
-* Linear operators can be thought of as matrix multplications, and matrix multiplications can be thought of linear operators interchangeably.
+## Matrix Representations of Linear Operators:
+* Linear operators can be thought of as matrix multplications, and matrices can be thought of linear operators interchangeably.
 * Suppose you have an **mxn** matrix **A** as show below:
 
 $$ A=\begin{pmatrix}
@@ -335,13 +339,29 @@ A_{m1} & \dots & A_{mn}
 
 $$ \mathbf{A_{mxn}} * \mathbf{B_{nxr}}=\mathbf{C_{mxr}}$$
 
+* The same rules of matrix multiplication apply when we try to multiply a matrix **A** with a vector **|v>** so the inner dimensions of the matrix and vector must match and the output of the multiplication is a new vector **|w>** with the outer dimensions of **A** and **|v>**
+
+$$ \mathbf{A_{mxn}} |v> =|w> \, \forall v \in \mathbf{V^n} \, \forall w \in \mathbf{W^m}$$
+
 * If you multiply a vector **|v>** that belongs to $\mathbf{V}^n$ with the above **mxn** matrix, you produce a new vector **|w>** which has **m** dimensions and belongs to $\mathbf{W}^m$. This is in fact equivalent to saying $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$
 * Suppose you have the matrix representation of the operator **A** such that $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ and the two vector spaces **V** and **W** have the following basis sets
 
-$$\mathbf{V^m}: |v_i>\, \forall i \in [1,m]$$
+$$\mathbf{V^n}: |v_i>\, \forall i \in [1,n]$$
 
-$$\mathbf{W^n}: |w_j>\, \forall j \in [1,n]$$
+$$\mathbf{W^m}: |w_j>\, \forall j \in [1,m]$$
 
 * Then we can describe the operation of **A** on the vector **|v>** as:
 
-$$ \mathbf{A}|v_i>=\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,m] \, \forall j \in [1,n] $$
+$$ \mathbf{A}|v_i>=\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,n] \, \forall j \in [1,m] $$
+
+* Here, $A_{ji}$ are the matrix elements of the matrix representation of operator **A** such that the index i runs over the columns and index j runs over the rows.
+
+* Note that resulting vector from the multiplication definitvely belongs to the vector space **W** since it is expressed as a linear combination of the vector basis of **W**
+
+* We have introduced an equation which uses the matrix representation of an operator $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ only when it acts on one vector of the basis set of **V**:
+
+$$ \mathbf{A}|v_i>=\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,n] \, \forall j \in [1,m] $$
+
+* We would like to generalize this equation in order to be valid for all vectors which belong to **V** space. That's to say, we would like to generalize it to include linear combinations of the basis set of **V**. This can be expressed as:
+
+$$ \mathbf{A}(\sum_{i=1}^na_i|v_i>)=\sum_{i=1}^na_i\mathbf{A}|v_i>=\sum_{i=1}^na_i\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,n] \, \forall j \in [1,m] $$
