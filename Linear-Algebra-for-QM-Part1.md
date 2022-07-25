@@ -441,3 +441,4 @@ $$ \mathbf{I^2}=\mathbf{X^2}=\mathbf{Y^2}=\mathbf{Z^2}=\mathbf{I}$$
 $$ \mathbf{A} = \mathbf{A^{\dagger}}=\mathbf{(A^*)^{T}}$$
 
 * Other notable properties is that the pauli matrices **X**, **Y** and **Z** all have a determinant of **-1** and a trace of **0**. Furthermore, the **Eigenvectors** of each of **X**, **Y** and **Z** forms a complete basis for the complex vector space $\mathbf{V^2}$
+* We will be seeing pauli matrices again! but for now it suffices to say that they are extremely important!
