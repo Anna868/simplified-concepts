@@ -30,7 +30,7 @@ We often refer to this linear algebraic grammar as the ‘notation’ of writing
 So in this series of posts, we will focus more on the formal notations of Linear Algebra and work through simple exercises together.
 Think of this as your first time trying to hold a pen to write your first grammatically correct sentence in the foreign language that you are trying to learn!
 
-Note: Although there were some equations here and there in my previous post on [Hilbert Spaces]((https://github.com/Anna868/simplified-concepts/blob/main/Hilbert-Spaces.md), there wasn’t any formal introduction to the notations
+Note: Although there were some equations in my previous post on [Hilbert Spaces](https://github.com/Anna868/simplified-concepts/blob/main/Hilbert-Spaces.md), there weren’t any formal introduction to the notations
 of linear algebraic expressions in Quantum Mechanics. The equations were beside the point; but in this post they are the main objective.
 
 
@@ -60,8 +60,8 @@ $$ \vec{v} $$
 
 $$ |v> $$ 
 
-* The notation |v> is also called a **ket** indicating the v is a column vector
-* Any vector space contains two special operations: Addition of two vectors and multiplication of a vector by a constant number (a scalar). Let's see each of these operation expressed in the matrix column notation.
+* The notation |v> is also called a **ket** indicating that v is a column vector
+* Any vector space contains two special operations: Addition of two vectors and multiplication of a vector by a constant number (a scalar). Let's see each of these operations expressed in the matrix column notation.
 * Suppose we want to add two vectors |v> and |z>, this is expressed as adding the respective numbers inside the two vectors together:
 
 $$ \begin{pmatrix}
@@ -95,7 +95,7 @@ zv_1 \\
 zv_n
 \end{pmatrix}$$
 
-* In complex vector spaces, the vectors consist of complex numbers. One property of complex numbers is that they have a conjugate. The conjugate is a replica of the complex number with the only difference that the imaginary part has a switched sign. The in-line representation of a conjugate is the astrisk as a superscript:
+* In complex vector spaces, the vectors consist of complex numbers. One property of complex numbers is that they have a conjugate. The conjugate is a replica of the complex number with the only difference that the imaginary part has a switched sign. The in-line representation of a conjugate is the asterisk as a superscript:
 
 $$ (1+i)^* =1-i $$
 
@@ -127,7 +127,7 @@ $$
 
 * The adjoint of a vector is the conjugate transpose of that vector. The adjoint operator is denoted by a dagger superscript to the vector as follows:
 
-$$(|v>)^\dagger = (\vec{v})^\dagger =
+$$(|v>)^\dagger = (\vec{v})^\dagger = 
 \begin{pmatrix}
 v_1 \\
 \vdots \\
@@ -136,7 +136,7 @@ v_n
 v_1^* & \dots & v_n^*
 \end{pmatrix}
 $$
-
+* The adjoint of a vector is also known as the **dual vector** and can be represented by **<v|** in Dirac notation. **<v|** is also known as a **bra**
 * Each complex vector space contains a special vector called the zero vector whose elements are all zeros. It is given by:
 
 $$ \mathbf{0}= \begin{pmatrix}
@@ -249,6 +249,26 @@ $$|v_3>= \begin{pmatrix}
 
 $$ a_1|v_1>+a_2|v_2>+a_3|v_3>= \mathbf{0} $$
 
+* Suppose we use $a_0=a_1=1$ and $a_2=-1$ in the equation above, so we get:
+
+$$\begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}+
+\begin{pmatrix}
+1 \\
+2
+\end{pmatrix}-
+\begin{pmatrix}
+2 \\
+1
+\end{pmatrix}=\begin{pmatrix}
+0 \\
+0
+\end{pmatrix}$$
+
+* This leads us to the conclusion that the set of vectors is **linearly dependent** and therefore it cannot be a basis set.
+
 ## Linear Operators:
 * A linear operator **A** is a function which takes an input vector **|v>** and maps it into a different vector **|w>**. If the vector **|v>** belongs to the vector space $\mathbf{V}$ and the new vector **|w>** belongs to a different vector space $\mathbf{W}$, then we may express this as:
 
@@ -258,7 +278,8 @@ $$ A: \mathbf{V} \rightarrow \mathbf{W} $$
 
 $$ A: \mathbf{V} \rightarrow \mathbf{V} $$
 
-* The linearity property of the operator means that the operator is not affected by scalar multiples of input vectors, as it always acts on the input vectors themselves not the scalar multiples! To understand this better let's consider a vector **|v>** which belongs to $\mathbf{V}^3$ space. We can express this vector in terms of the basis set of $\mathbf{V}^3$ as:
+* The linearity property of the operator means that the operator is not affected by scalar multiples of input vectors, as it always acts on the input vectors themselves and doesn't act on constant numbers!
+* To understand this better let's consider a vector **|v>** which belongs to $\mathbf{V}^3$ space. We can express this vector in terms of the basis set of $\mathbf{V}^3$ as:
 
 $$ |v>=a_1|v_1> +a_2|v_2> +a_3|v_3>$$
 
@@ -266,8 +287,61 @@ $$ |v>=a_1|v_1> +a_2|v_2> +a_3|v_3>$$
 
 $$ A(|v>)=A(a_1|v_1> +a_2|v_2> +a_3|v_3>)=A(a_1|v_1>) +A(a_2|v_2>) +A(a_3|v_3>)=a_1A(|v_1>) +a_2A(|v_2>) +a_3A(|v_3>)$$
 
-* First notice how we distributed the operator on the individual vector terms regardless of the plus sign (**Distributivity Property**). Next, notice how scalar factors (constant numbers $a_1,a_2,a_3$ are not affected by the operator and so they can be factored out (**Linearity Property**). These two properities are characteristic to operators in vector spaces. These two properties can be expressed in a compact form as:
+* First notice how we distributed the operator on the individual vector terms regardless of the plus sign (**Distributivity Property**). Next, notice how scalar factors (constant numbers $a_1,a_2,a_3$) are not affected by the operator and so they can be factored out (**Linearity Property**). These two properities are characteristic to operators in vector spaces. These two properties can be expressed in a compact form as:
 
 $$A(\sum_ia_i|v_i>)=\sum_ia_iA(|v_i>)$$
 
-* In standard QM notation, we can denote an operator **A** acting on vector **|v>** by **A|v>** instead of **A(|v>)** 
+* In standard QM notation, we can denote an operator **A** acting on vector **|v>** by **A|v>** instead of **A(|v>)** so the above equation can be written as:
+
+$$A\sum_ia_i|v_i>=\sum_ia_iA|v_i>$$
+
+* A special operator that acts on all vector spaces is the **Identity Operator** which takes as an input the vector **|v>** and maps it back into itself so it returns **|v>**.
+* The identity operator is referred to by the bolded letter **I** and its operation is defined as:
+
+$$ \mathbf{I}: \mathbf{V} \rightarrow \mathbf{V} $$
+
+$$ \mathbf{I} |v> \equiv |v> \forall |v> \in \mathbf{V}^n $$
+
+* Another special operator that acts on all vector spaces is the **Zero Operator** which takes as an input the vector **|v>** and maps it into the vector **0**
+* The identity operator is referred to by the bolded letter **0** and its operation is defined as:
+
+$$ \mathbf{0}: \mathbf{V} \rightarrow \mathbf{V} $$
+
+$$ \mathbf{0} |v> \equiv \mathbf{0} \, \forall |v> \in \mathbf{V}^n $$
+
+* Suppose **V**, **W**, and **X** are vector spaces and you have two operators defined by:
+
+$$ \mathbf{A}: \mathbf{V} \rightarrow \mathbf{W} $$
+
+$$ \mathbf{B}: \mathbf{W} \rightarrow \mathbf{X} $$
+
+* Then we can map a vector from space **V** to space **X** by first applying operator **A** on the input vector, then applying the operator **B** on the resulting vector. This cab expressed as:
+
+$$ \mathbf{B}(\mathbf{A}(|v>)) \equiv \mathbf{B}\mathbf{A}|v>$$
+
+* Linear operators can be thought of as matrix multplications, and matrix multiplications can be thought of linear operators interchangeably.
+* Suppose you have an **mxn** matrix **A** as show below:
+
+$$ A=\begin{pmatrix}
+A_{11} & \dots & A_{1n} \\
+\vdots & \ddots & \vdots \\
+A_{m1} & \dots & A_{mn}
+\end{pmatrix}$$
+
+* As you can see, you can think of this matrix as **n** number of column vectors stacked beside each other and each vector has **m** group of numbers inside of it. Hence **m** is the number of **rows** in a matrix and **n** is the number of columns
+
+* Recall that when we perform matrix multiplication by multiplying the matrix **A** and matrix **B** together, we must make sure that the **inner dimensions** of the matrices are equal. 
+* In other words, we can only multiply matrix **A** with matrix **B** if and only if the number of columns of **A** is equal to the number of rows in **B**. In this case, we produce a new matrix **C** whose dimensions are the **outer dimensions** of **A** and **B**. This can be written as:
+
+$$ \mathbf{A_{mxn}} * \mathbf{B_{nxr}}=\mathbf{C_{mxr}}$$
+
+* If you multiply a vector **|v>** that belongs to $\mathbf{V}^n$ with the above **mxn** matrix, you produce a new vector **|w>** which has **m** dimensions and belongs to $\mathbf{W}^m$. This is in fact equivalent to saying $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$
+* Suppose you have the matrix representation of the operator **A** such that $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ and the two vector spaces **V** and **W** have the following basis sets
+
+$$\mathbf{V^m}: |v_i>\, \forall i \in [1,m]$$
+
+$$\mathbf{W^n}: |w_j>\, \forall j \in [1,n]$$
+
+* Then we can describe the operation of **A** on the vector **|v>** as:
+
+$$ \mathbf{A}|v_i>=\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,m] \, \forall j \in [1,n] $$
