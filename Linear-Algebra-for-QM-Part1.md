@@ -438,4 +438,4 @@ $$ \mathbf{I^2}=\mathbf{X^2}=\mathbf{Y^2}=\mathbf{Z^2}=\mathbf{I}$$
 
 * The Pauli matrices are also **Hermitian Matrices**. Any hermitian matrix by definition is equal to its self-adjoint. This can be expressed as:
 
-$$ \mathbf{A} = \mathbf{A^{\dagger}}$$
+$$ \mathbf{A} = \mathbf{A^{\dagger}}=\mathbf{(A^*)^{T}}$$
