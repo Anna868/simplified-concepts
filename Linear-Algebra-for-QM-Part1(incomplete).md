@@ -170,4 +170,52 @@ $$ |v> \neq a|w> $$
 
 $$ \forall a \in \mathbf{C} $$
 
-* The above relation means that we cannot express the vector |v> in terms of the vector |w> and vice versa, hence the **independence** term
+* The above relation means that we cannot express the vector |v> in terms of the vector |w> and vice versa, hence the **independence** term.
+
+* For any complex vector space, there exists a special group of **linearly independent** vectors which we call **A Vector Basis** or just **Basis** for short.
+* We use the basis to represent any vector inside the complex vector space as a **linear combination** of the basis vectors.
+* Suppose we have a complex vector space which has **n** dimensions, then we can write its vector basis as the group of vectors:
+
+$$ |v_1> \dots |v_n> \equiv |v_i> \forall i \in [1,n] $$
+
+* Any random vector |w> can now be represented in terms of the basis above as:
+
+$$ |w>=a_1|v_1> +a_2|v_2>+ \dots + a_n|v_n> = \sum_i^n a_i|v_i>$$
+
+* In the above expression, it is clear that using the summation is much more compact and informative. The summation has an index **i** that runs from 1 upto **n** which is the number of vectors in the basis (and is also the number of dimensions in the vector space). The constant number $a_i$ is a number to be multiplied by the **ith** vector in the basis. These constant numbers $a_1 \dots a_n$ give us an extra degree of freedom to construct any random vector |w>
+
+* **Example**: For the complex vector space $\mathbf{V}^2$ we can have a basis set which consists of two vectors:
+
+$$ |v_1> = \begin{pmatrix}
+1 \\
+-1 
+\end{pmatrix}$$
+
+$$ |v_2> = \begin{pmatrix}
+0 \\
+1 
+\end{pmatrix}$$
+
+* Any vector in $\mathbf{V}^2$ can now be represented as:
+
+$$ |w>= \sum_{i=1}^{2} a_i|v_i>=a_1|v_1> +a_2|v_2>= \begin{pmatrix}
+a_1 \\
+a_2-a_1 
+\end{pmatrix} \, \forall (a_1,a_2) \in \mathbf{C^2}  $$
+
+* There can be multiple basis sets for the same vector space, for example, another valid basis set for $\mathbf{V}^2$ is:
+
+$$ |v_1> = \begin{pmatrix}
+1 \\
+0 
+\end{pmatrix}$$
+
+$$ |v_2> = \begin{pmatrix}
+0 \\
+1 
+\end{pmatrix}$$
+
+$$ |w>= \sum_{i=1}^{2} a_i|v_i>=a_1|v_1> +a_2|v_2>= \begin{pmatrix}
+a_1 \\
+a_2
+\end{pmatrix} \, \forall (a_1,a_2) \in \mathbf{C^2}  $$
