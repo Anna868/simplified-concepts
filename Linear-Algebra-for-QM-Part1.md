@@ -403,3 +403,30 @@ $$I=\begin{pmatrix}
 1 & 0 \\
 0 & 1
 \end{pmatrix}$$
+
+## Pauli Matrices as Important Linear Operators:
+
+* There are four extremely useful and unique linear operators which we shall encounter many times in our QM studies. These fours operators are known as **Pauli Operators**. Although it is more common to call them **Pauli Matrices** due to the unique properities of their matrix representations.
+* We have already seen and dealt with one of the pauli matrices which is the **Identity Matrix** which represents the identity operator and we proved that it had the following form:
+
+$$ I=\sigma_0=\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}$$
+
+* The other three matrices are better known as the **X**, **Y**, and **Z** matrices. The reason for this naming will be clear in the future when we get more into QM calculations. They are given by:
+
+$$ X= \sigma_x=\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}$$
+
+$$Y =\sigma_y= \begin{pmatrix}
+0 & -i \\
+i & 0 
+\end{pmatrix}$$
+
+$$Z=\sigma_z=\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}$$
