@@ -219,3 +219,32 @@ $$ |w>= \sum_{i=1}^{2} a_i|v_i>=a_1|v_1> +a_2|v_2>= \begin{pmatrix}
 a_1 \\
 a_2
 \end{pmatrix} \, \forall (a_1,a_2) \in \mathbf{C^2}  $$
+
+* A basis set cannot have two or more vectors that are linearly dependent. Therefore, we should verify that a particular basis set is valid by checking if all its vectors are **linearly independent**.
+
+* A group of vectors is said to be **linearly dependent** if there exists a group of complex numbers $a_1 \dots a_n$, with at least one non-zero number in it, that satsifies the following equation:
+
+$$ a_1|v_1>+a_2|v_2>+\dots+a_n|v_n>= \mathbf{0} $$
+
+* So if you can prove that the above relation is not true for a group of vectors, then this group of vectors is a basis set which **spans the space**
+
+* **Exercise #1** Verify whether the following group of vectors spans the vector space $\mathbf{V}^3$:
+
+$$|v_1>= \begin{pmatrix}
+1 \\
+-1
+\end{pmatrix}$$
+
+$$|v_2>= \begin{pmatrix}
+1 \\
+2
+\end{pmatrix}$$
+
+$$|v_3>= \begin{pmatrix}
+2 \\
+1
+\end{pmatrix}$$
+
+* **Solution #1** In order for this set of vectors to span the vector space $\mathbf{V}^3$, it has to be a basis set, which means that it should be linearly independent. The check for linear dependency means finding three numbers $a_1, a_2, a_3$ for which the following equation holds:
+
+$$ a_1|v_1>+a_2|v_2>+a_3|v_3>= \mathbf{0} $$
