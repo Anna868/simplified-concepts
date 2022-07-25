@@ -430,3 +430,8 @@ $$Z=\sigma_z=\begin{pmatrix}
 1 & 0 \\
 0 & -1
 \end{pmatrix}$$
+
+* By definition, whenever a matrix $\mathbf{A}$ is multiplied by its inverse $\mathbf{A^{-1}}$, the result is the identity matrix $\mathbf{I}$.
+* An interesting property of the Pauli matrices is that every one of them is its own inverse. This is expressed as:
+
+$$ \mathbf{I^2}=\mathbf{X^2}=\mathbf{Y^2}=\mathbf{Z^2}=\mathbf{I}$$
