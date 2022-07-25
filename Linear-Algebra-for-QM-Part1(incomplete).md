@@ -61,5 +61,113 @@ $$ \vec{v} $$
 $$ |v> $$ 
 
 * The notation |v> is also called a **ket** indicating the v is a column vector
+* Any vector space contains two special operations: Addition of two vectors and multiplication of a vector by a constant number (a scalar). Let's see each of these operation expressed in the matrix column notation.
+* Suppose we want to add two vectors |v> and |z>, this is expressed as adding the respective numbers inside the two vectors together:
+
+$$ \begin{pmatrix}
+z_1 \\
+\vdots \\
+z_n
+\end{pmatrix}
++
+\begin{pmatrix}
+v_1 \\
+\vdots \\
+v_n
+\end{pmatrix} = 
+\begin{pmatrix}
+v_1+z_1 \\
+\vdots \\
+v_n+z_n
+\end{pmatrix}$$
+
+* Suppose we want to multiply the vector |v> by a constant number z, this is expressed as multiplying each individual number of the vector |v> by this constant number:
+
+$$ z
+\begin{pmatrix}
+v_1 \\
+\vdots \\
+v_n
+\end{pmatrix} = 
+\begin{pmatrix}
+zv_1 \\
+\vdots \\
+zv_n
+\end{pmatrix}$$
+
+* In complex vector spaces, the vectors consist of complex numbers. One property of complex numbers is that they have a conjugate. The conjugate is a replica of the complex number with the only difference that the imaginary part has a switched sign. The in-line representation of a conjugate is the astrisk as a superscript:
+
+$$ (1+i)^* =1-i $$
+
+* We can define a conjugate for a complex vector as well. This is represented as:
+
+$$(|v>)^* = (\vec{v})^* =
+\begin{pmatrix}
+v_1 \\
+\vdots \\
+v_n
+\end{pmatrix}^* = \begin{pmatrix}
+v_1^* \\
+\vdots \\
+v_n^*
+\end{pmatrix}
+$$
+
+* There is also another operation we can do to the vectors in order to represent them as row matrices instead of the column matrix representation which is the transpose operation. The transpose operation is useful whenever we start multiplying two vectors together. The transpose operation is represented as a superscript T to the vector being transposed:
+
+$$(|v>)^T = (\vec{v})^T =
+\begin{pmatrix}
+v_1 \\
+\vdots \\
+v_n
+\end{pmatrix}^T = \begin{pmatrix}
+v_1 & \dots & v_n
+\end{pmatrix}
+$$
+
+* The adjoint of a vector is the conjugate transpose of that vector. The adjoint operator is denoted by a dagger superscript to the vector as follows:
+
+$$(|v>)^\dagger = (\vec{v})^\dagger =
+\begin{pmatrix}
+v_1 \\
+\vdots \\
+v_n
+\end{pmatrix}^\dagger = \begin{pmatrix}
+v_1^* & \dots & v_n^*
+\end{pmatrix}
+$$
+
+* Each complex vector space contains a special vector called the zero vector whose elements are all zeros. It is given by:
+
+$$ \mathbf{0}= \begin{pmatrix}
+0 \\
+\vdots \\
+0
+\end{pmatrix}$$
+
+* Note that the zero vector has a special notation (a bolded zero **0** ) instead of a ket representation. This is because the ket representation |0> is reserved for another vector in QM literature.
+
+* Two special properties of the zero vector are that any addition of a vector |v> with the zero vector always gives back |v> and any scalar multiplication with the zero vector always gives back the zero vector:
+
+$$ |v> + \mathbf{0} \equiv |v> $$
+
+$$ a\mathbf{0} \equiv \mathbf{0} $$
 
 
+## Vector Bases and Linear Independence:
+
+* Suppose two vectors |v> and |w> are scalar multiples of one another as expressed below where **a** is the scalar:
+
+$$ |v> = a|w> $$
+
+* The above relation means that the two vectors are **linearly dependent** on one another by a factor of **a**. The dependence is called linear because **a** is a constant number. Here **a** could be any number that belongs to the set of complex numbers deonted by **C**
+
+$$ \forall a \in \mathbf{C} $$
+
+* For any two vectors |v> and |w> which are not linearly dependent (**Linearly Independent**), we can write the following relation for all possible complex constant numbers:
+
+$$ |v> \neq a|w> $$
+
+$$ \forall a \in \mathbf{C} $$
+
+* The above relation means that we cannot express the vector |v> in terms of the vector |w> and vice versa, hence the **independence** term
