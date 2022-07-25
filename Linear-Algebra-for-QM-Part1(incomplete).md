@@ -248,3 +248,26 @@ $$|v_3>= \begin{pmatrix}
 * **Solution #1** In order for this set of vectors to span the vector space $\mathbf{V}^3$, it has to be a basis set, which means that it should be linearly independent. The check for linear dependency means finding three numbers $a_1, a_2, a_3$ for which the following equation holds:
 
 $$ a_1|v_1>+a_2|v_2>+a_3|v_3>= \mathbf{0} $$
+
+## Linear Operators:
+* A linear operator **A** is a function which takes an input vector **|v>** and maps it into a different vector **|w>**. If the vector **|v>** belongs to the vector space $\mathbf{V}$ and the new vector **|w>** belongs to a different vector space $\mathbf{W}$, then we may express this as:
+
+$$ A: \mathbf{V} \rightarrow \mathbf{W} $$
+
+* The linear operator can also map a vector **|v>** to a different vector **|v'>** within the same vector space $\mathbf{V}$. In this case, the linear operator is expressed in the following manner:
+
+$$ A: \mathbf{V} \rightarrow \mathbf{V} $$
+
+* The linearity property of the operator means that the operator is not affected by scalar multiples of input vectors, as it always acts on the input vectors themselves not the scalar multiples! To understand this better let's consider a vector **|v>** which belongs to $\mathbf{V}^3$ space. We can express this vector in terms of the basis set of $\mathbf{V}^3$ as:
+
+$$ |v>=a_1|v_1> +a_2|v_2> +a_3|v_3>$$
+
+* Now, we want to apply on **|v>** the operator **A** which is expressed as follows:
+
+$$ A(|v>)=A(a_1|v_1> +a_2|v_2> +a_3|v_3>)=A(a_1|v_1>) +A(a_2|v_2>) +A(a_3|v_3>)=a_1A(|v_1>) +a_2A(|v_2>) +a_3A(|v_3>)$$
+
+* First notice how we distributed the operator on the individual vector terms regardless of the plus sign (**Distributivity Property**). Next, notice how scalar factors (constant numbers $a_1,a_2,a_3$ are not affected by the operator and so they can be factored out (**Linearity Property**). These two properities are characteristic to operators in vector spaces. These two properties can be expressed in a compact form as:
+
+$$A(\sum_ia_i|v_i>)=\sum_ia_iA(|v_i>)$$
+
+* In standard QM notation, we can denote an operator **A** acting on vector **|v>** by **A|v>** instead of **A(|v>)** 
