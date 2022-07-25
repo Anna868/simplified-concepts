@@ -4,9 +4,6 @@ If you hear someone speaking a foreign language for the first time, you will be 
 
 But if you spend a few days with this person, and maybe use an application like Duolingo to help you with the basic vocabulary of the language, then gradually
  you will be able to understand the language when it is spoken!
- 
- ![language_barrier](https://user-images.githubusercontent.com/47701869/180783165-15eca8af-7649-4db1-a386-9ab0efe7830c.jpg)
-
 
 The native language of Quantum Mechanics is Linear Algebra.
 Every sentence written to express a Quantum Mechanical phenomenon is most likely a linear algebraic expression.
@@ -362,6 +359,47 @@ $$ \mathbf{A}|v_i>=\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,n] \, \forall 
 
 $$ \mathbf{A}|v_i>=\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,n] \, \forall j \in [1,m] $$
 
-* We would like to generalize this equation in order to be valid for all vectors which belong to **V** space. That's to say, we would like to generalize it to include linear combinations of the basis set of **V**. This can be expressed as:
+* We would like to generalize this equation in order to be valid for all vectors which belong to **V** space. That's to say, we would like to generalize it to include linear combinations of the basis set of **V**. This generalization is  done by by using the distributivity and linearity properties of **A** and is expressed as:
 
 $$ \mathbf{A}(\sum_{i=1}^na_i|v_i>)=\sum_{i=1}^na_i\mathbf{A}|v_i>=\sum_{i=1}^na_i\sum_{j=1}^{m} A_{ji}|w_j> \, \forall i \in [1,n] \, \forall j \in [1,m] $$
+
+* **Excercise #2:** Show that the identity operator on a vector space **V** has a matrix which is one along the diagonal sites and zero everywhere else
+*  **Solution #2:** Suppose that the vector space is $\mathbf{V^2}. One basis set for this space is given by:
+
+$$ |v_1>= \begin{pmatrix}
+0 \\
+1
+\end{pmatrix}$$
+
+$$ |v_2>=\begin{pmatrix}
+1\\
+0
+\end{pmatrix}$$
+
+* Now, the identity operator matrix representation $\mathbf{I}$ should act on each member of the basis representing the space **V**.
+* Note: for this type of problem, it would be confusing to use the generalized equation for linear combinations of the basis; as it would be more useful only when the matrix reprsentation is already known!
+
+$$ \mathbf{I}: \mathbf{V} \rightarrow \mathbf{V}$$
+
+$$ \mathbf{I} |v_1> = \sum_{j=1}^{2}A_{j1}|v_j>=A_{11}|v_1>+A_{21}|v_2> $$
+
+$$ \mathbf{I} |v_2> = \sum_{j=1}^{2} A_{j2}|v_j>=A_{12}|v_1>+A_{22}|v_2>$$
+
+* by the definition of the identity operator, when it acts on a vector, it returns the vector unchanged. So we can also write:
+
+$$ \mathbf{I} |v_1> \equiv |v_1> $$
+
+$$ \mathbf{I} |v_2> \equiv |v_2> $$
+
+* by simple comparison of each two corresponding equations we find that:
+
+$$ A_{11}=A_{22}=1$$
+
+$$ A_{12}=A_{21}=0$$
+
+* We can now write the matrix representation for the identity operator in $\mathbf{V^2}$:
+
+$$I=\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}$$
