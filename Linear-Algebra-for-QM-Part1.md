@@ -451,4 +451,10 @@ $$ \mathbf{A} = \mathbf{A^{\dagger}}=\mathbf{(A^*)^{T}}$$
 ![dotproduct](https://user-images.githubusercontent.com/47701869/180964297-92880fc8-a515-4cbe-a7b1-c2ceb5f8c45a.jpg)
 
 * It is clear that when the angle between the direction of **|v>** and the direction of **|v'>** approaches 90 degrees (i.e. the two vectors are perpendicular on each other), the overlap between them will be zero! In this case we say that **|v>** and **|v'>** are two **orthogonal vectors**
+* There are several in-line notations for the inner product of two vectors. The two most frequently used in QM studies are the following:
 
+<img align="center" src='https://user-images.githubusercontent.com/47701869/180967854-6f683db8-ed21-4c7a-952a-59d4f063e0bb.gif'>
+
+* Note that the notation **<v|v'>** uses the Bra-ket Notation in the following manner:
+
+![CodeCogsEqn (1)](https://user-images.githubusercontent.com/47701869/180970022-e7487def-458d-47aa-ade2-c84b00ea7a9b.gif)
