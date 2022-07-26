@@ -473,3 +473,11 @@ w_1 \\
 \vdots \\
 w_n
 \end{pmatrix} =(v_1^*  \cdot w_1 )+(v_2^*  \cdot w_2)+\dots+(v_n^*  \cdot w_n)=\sum_{i=1}^{n} v_i^*  \cdot w_i $$
+
+* Any inner product must satisfy three main conditions:
+
+(1) The inner product must be linear in its first argument and anti-linear in its second argument
+
+(2) The vectors in the inner product do not commute $(|v>, |w>)=(|w>,|v>)^* $ 
+
+(3) The inner product of any vector **|v>** with itself **<v|v>** is a positive definite number  $(|v>, |v>)\geq 0 $ 
