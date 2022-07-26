@@ -523,3 +523,5 @@ $$ || |v> ||=\sqrt{(|v>, |v>)}=1 $$
 * Any vector which is not normalized, can be normalized by a very simple process. First, we compute the magnitude of the vector, then we divide the vector by its magntiude to obtain the normalized version
 
 $$ || |v_{Norm}> ||=\frac{|v>}{\sqrt{(|v>, |v>)}} $$
+
+* Any two vectors, **|v>** and **|w>** , which are **normalized** but their inner product **<v|w>** is zero are called two **Orthonormal Vectors**. This name is a combination of **Orthogonal** and **Normalized**
