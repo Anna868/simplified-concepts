@@ -449,8 +449,9 @@ $$ \mathbf{A} = \mathbf{A^{\dagger}}=\mathbf{(A^*)^{T}}$$
 * Before we discuss the meaning of the constant number **v** which is the output of the inner product, we first need to recall the representations of vectors as straight lines in space with a positive definite length as well as a specific direction.
 
 ![image](https://user-images.githubusercontent.com/47701869/180971923-1aa23c78-de5f-4d79-8121-76e529552526.png)
-
-* The constant number **v** represents the projection of the vector **|v>** unto the vector **|v'>**. It is a measure of how much the vectors **|v>** and **|v'>** overlap together.
+* In this section, we will see how we can define both the magnitude and the direction of a vector **|v>** in the sapce $\mathbf{V^n}$, but for now, let's just keep this idea in mind to understand the role of inner products.
+* Now, we can say that output of the inner product between the two vectors **|v>** and **|v'>**, which is the constant number **v** , represents the projection of the vector **|v>** unto the vector **|v'>**.
+* The inner product is a measure of how much the vectors **|v>** and **|v'>** overlap together. In other words, it is a measure of how similar their directions are in the vector space $\mathbf{V^n}$
 
 ![dotproduct](https://user-images.githubusercontent.com/47701869/180964297-92880fc8-a515-4cbe-a7b1-c2ceb5f8c45a.jpg)
 
@@ -459,6 +460,16 @@ $$ \mathbf{A} = \mathbf{A^{\dagger}}=\mathbf{(A^*)^{T}}$$
 
 <img align="center" src='https://user-images.githubusercontent.com/47701869/180967854-6f683db8-ed21-4c7a-952a-59d4f063e0bb.gif'>
 
-* Note that the notation **<v|v'>** uses the Bra-ket Notation in the following manner:
+* Note that the representation **<v|v'>** uses the Bra-ket Notation in the following manner:
 
 ![CodeCogsEqn (1)](https://user-images.githubusercontent.com/47701869/180970022-e7487def-458d-47aa-ade2-c84b00ea7a9b.gif)
+
+* The process of calculating the inner product between **|v>** and **|w>** is given by:
+
+$$ \begin{pmatrix} v_1^* & v_2^* & \dots & v_n^* \end{pmatrix} 
+\cdot
+\begin{pmatrix}
+w_1 \\
+\vdots \\
+w_n
+\end{pmatrix} =(v_1^*  \cdot w_1 )+(v_2^*  \cdot w_2)+\dots+(v_n^*  \cdot w_n)=\sum_{i=1}^{n} v_i^*  \cdot w_i $$
