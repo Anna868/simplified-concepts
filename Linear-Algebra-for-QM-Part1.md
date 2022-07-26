@@ -520,4 +520,6 @@ $$ || |v> ||=\sqrt{(|v>, |v>)} $$
 
 $$ || |v> ||=\sqrt{(|v>, |v>)}=1 $$
 
+* Any vector which is not normalized, can be normalized by a very simple process. First, we compute the magnitude of the vector, then we divide the vector by its magntiude to obtain the normalized version
 
+$$ || |v_{Norm}> ||=\frac{|v>}{\sqrt{(|v>, |v>)}} $$
