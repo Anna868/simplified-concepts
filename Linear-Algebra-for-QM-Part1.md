@@ -525,3 +525,39 @@ $$ || |v> ||=\sqrt{(|v>, |v>)}=1 $$
 $$ || |v_{Norm}> ||=\frac{|v>}{\sqrt{(|v>, |v>)}} $$
 
 * Any two vectors, **|v>** and **|w>** , which are **normalized** but their inner product **<v|w>** is zero are called two **Orthonormal Vectors**. This name is a combination of **Orthogonal** and **Normalized**
+
+* Orthonormal vectors are important as they are used in defining the notion of "vector direction" in the vector space $\mathbf{V^n}$
+* While any linearly independent set of **n** vectors can be a basis for the vector space $\mathbf{V^n}$ to express its vectors numerically; only a set of **linearly independent orthonormal vectors** can be used to express the numerical values of arbitrary vectors as well as their directions
+* **Example**: Assume an arbitrary vector **|v>** in $\mathbf{V^3}$ which is given by:
+
+$$ |v>= \begin{pmatrix}
+1 \\
+2 \\
+-1
+\end{pmatrix}$$
+
+* And suppose a possible orthonormal basis for $\mathbf{V^3}$ is given by:
+
+$$ |v_1>= \begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix}$$
+
+$$ |v_2>= \begin{pmatrix}
+0 \\
+1 \\
+0
+\end{pmatrix}$$
+
+$$ |v_3>= \begin{pmatrix}
+0 \\
+0 \\
+1
+\end{pmatrix}$$
+
+* You can verify the orthonormality of the basis set by simple checks:
+
+$$ (|v_1> |, |v_2> ) = (|v_1> |, |v_3> ) = (|v_2> | , |v_3> ) = 0 $$
+
+$$ || |v_1> || = || |v_2> || = || |v_3> || = 1 $$
