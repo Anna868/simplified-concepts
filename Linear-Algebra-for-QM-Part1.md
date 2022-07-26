@@ -476,7 +476,10 @@ w_n
 
 * Any inner product must satisfy three main conditions:
 
-(1) The inner product must be linear in its first argument and anti-linear in its second argument
+**(1) The inner product must be linear in its first argument and anti-linear in its second argument**
+* In order for the inner product to be linear in its first argument, it must satisfy the following equation:
+
+$$ (|v>, |w>) = (|v>, \sum_{i=1}^n a_i|w_i>)=\sum_{i=1}^n(|v>, a_i|w_i>)=\sum_{i=1}^na_i(|v>, |w_i>) $$
 
 (2) The vectors in the inner product do not commute $(|v>, |w>)=(|w>,|v>)^* $ 
 
