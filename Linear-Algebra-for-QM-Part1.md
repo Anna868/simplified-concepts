@@ -444,3 +444,6 @@ $$ \mathbf{A} = \mathbf{A^{\dagger}}=\mathbf{(A^*)^{T}}$$
 * We will be seeing pauli matrices again! but for now it suffices to say that they are extremely important!
 
 ## Inner Products and Orthonormalized Vector Bases:
+
+* An inner product is a function which takes an input two vectors **|v>** and **|v'>**, both belonging to the same vector space $\mathbf{V^n}$, and returns an output which is a constant number **v**.
+* So the inner product is a process which reduces the dimensions of the vector space we are dealing with from **n** dimensions to just a single dimension.
