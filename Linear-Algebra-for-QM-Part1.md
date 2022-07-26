@@ -561,3 +561,42 @@ $$ |v_3>= \begin{pmatrix}
 $$ (|v_1> |, |v_2> ) = (|v_1> |, |v_3> ) = (|v_2> | , |v_3> ) = 0 $$
 
 $$ || |v_1> || = || |v_2> || = || |v_3> || = 1 $$
+
+* We can rewrite the vector **|v>** in terms of the orthonormal basis set as follows:
+
+$$ |v>=a_1 |v_1>+a_2|v_2>+a_3|v_3>= \begin{pmatrix}
+1 \\
+0 \\
+0
+\end{pmatrix} +2 \cdot  \begin{pmatrix}
+0 \\
+1 \\
+0
+\end{pmatrix} + -1 \cdot  \begin{pmatrix}
+0 \\
+0 \\
+1
+\end{pmatrix}$$
+
+* The magnitude of **|v>** can then simply be obtained through the coefficients of the orthonormal basis vectors in the linear combination:
+
+$$ || |v> || = \sqrt{(|v>,|v>)} = \sqrt{1^2+2^2+1^2} = \sqrt{6}$$
+
+* The direction of **|v>** can be obtained from the normalized version of **|v>**:
+
+$$ |v_{norm}>= \frac{|v>}{|| |v> || }= \begin{pmatrix}
+1 \\
+2 \\
+-1
+\end{pmatrix} * \frac{1}{\sqrt{6}} \approx \begin{pmatrix}
+0.41 \\
+0.82 \\
+-0.41
+\end{pmatrix} $$
+
+* This normalized version of **|v>** is called the **unit vector** and it indicates that the direction of is **|v>** is:
+1) 0.41 in the direction of **|v1>** (with the direction of **|v1>**)
+2) 0.82 in the direction of **|v2>** (with the direction of **|v2>**)
+3) -0.41 in the direction of **|v3>** (against the direction of **|v3>**)
+
+* These fraction numbers are the ratio between the normalized vector component in the direction of **|vi>** and the unit vector in the direction of **|vi>** which has a unit length!
