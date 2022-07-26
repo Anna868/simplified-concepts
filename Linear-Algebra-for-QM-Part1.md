@@ -446,6 +446,10 @@ $$ \mathbf{A} = \mathbf{A^{\dagger}}=\mathbf{(A^*)^{T}}$$
 ## Inner Products and Orthonormalized Vector Bases:
 
 * An inner product is a function which takes as an input two vectors **|v>** and **|v'>**, both belonging to the same vector space $\mathbf{V^n}$, and returns an output which is a constant number **v**. 
+* Before we discuss the meaning of the constant number **v** which is the output of the inner product, we first need to recall the representations of vectors as straight lines in space with a positive definite length as well as a specific direction.
+
+![image](https://user-images.githubusercontent.com/47701869/180971923-1aa23c78-de5f-4d79-8121-76e529552526.png)
+
 * The constant number **v** represents the projection of the vector **|v>** unto the vector **|v'>**. It is a measure of how much the vectors **|v>** and **|v'>** overlap together.
 
 ![dotproduct](https://user-images.githubusercontent.com/47701869/180964297-92880fc8-a515-4cbe-a7b1-c2ceb5f8c45a.jpg)
