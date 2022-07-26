@@ -488,6 +488,11 @@ $$ (|v>, |w>) = (\sum_{i=1}^n a_i|v_i>, |w>)=\sum_{i=1}^n(a_i|v_i>, |w>)=\sum_{i
 
 * This means that if the first vector is in fact a linear combination of the vector space basis, then the inner product acts on every element of this linear combination, but it also takes the complex conjugate of the scalar coefficients of the linear combination!
 
-(2) The vectors in the inner product do not commute $(|v>, |w>)=(|w>,|v>)^* $ 
+**(2) The vectors in the inner product do not commute**:
+* THe above statement simply means that the order of the vectors in the inner product process matters. And if the order of the two vectors is changed, the reslut of the inner produch changes.
+* The change according to the vector order is given by :
+
+$$(|v>, |w>)=(|w>,|v>)^* $$ 
+* So when you change the vector order, you get the complex conjugate of the inner product result before changing the vector order.
 
 (3) The inner product of any vector **|v>** with itself **<v|v>** is a positive definite number  $(|v>, |v>)\geq 0 $ 
