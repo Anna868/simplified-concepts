@@ -481,6 +481,11 @@ w_n
 
 $$ (|v>, |w>) = (|v>, \sum_{i=1}^n a_i|w_i>)=\sum_{i=1}^n(|v>, a_i|w_i>)=\sum_{i=1}^na_i(|v>, |w_i>) $$
 
+* This means that if the second vector is in fact a linear combination of the vector space basis, then the inner product acts on every element of this linear combination and leaves the scalar coefficient of the linear combination unchanged!
+* In order for the inner product to be anti-linear in its first argument, it must satisfy the following equation:
+
+$$ (|v>, |w>) = (\sum_{i=1}^n a_i|v_i>, |w>)=\sum_{i=1}^n(a_i|v_i>, |w>)=\sum_{i=1}^na_i^* (|v_i>, |w>) $$
+
 (2) The vectors in the inner product do not commute $(|v>, |w>)=(|w>,|v>)^* $ 
 
 (3) The inner product of any vector **|v>** with itself **<v|v>** is a positive definite number  $(|v>, |v>)\geq 0 $ 
