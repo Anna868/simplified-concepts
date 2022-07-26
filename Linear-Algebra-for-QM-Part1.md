@@ -564,7 +564,7 @@ $$ || |v_1> || = || |v_2> || = || |v_3> || = 1 $$
 
 * We can rewrite the vector **|v>** in terms of the orthonormal basis set as follows:
 
-$$ |v>=a_1 |v_1>+a_2|v_2>+a_3|v_3>= \begin{pmatrix}
+$$ |v>=a_1 |v_1>+a_2|v_2>+a_3|v_3>= 1 \cdot \begin{pmatrix}
 1 \\
 0 \\
 0
@@ -594,9 +594,9 @@ $$ |v_{norm}>= \frac{|v>}{|| |v> || }= \begin{pmatrix}
 -0.41
 \end{pmatrix} $$
 
-* This normalized version of **|v>** is called the **unit vector** and it indicates that the direction of is **|v>** is:
-1) 0.41 in the direction of **|v1>** (with the direction of **|v1>**)
-2) 0.82 in the direction of **|v2>** (with the direction of **|v2>**)
-3) -0.41 in the direction of **|v3>** (against the direction of **|v3>**)
+* This normalized version of **|v>** is called the **unit vector of |v>** and it indicates that the direction of is **|v>** is:
+1) 0.41 in the direction of **|v1>** (i.e. with the direction of **|v1>**)
+2) 0.82 in the direction of **|v2>** (i.e. with the direction of **|v2>**)
+3) -0.41 in the direction of **|v3>** (i.e. against the direction of **|v3>** due to the negative sign)
 
-* These fraction numbers are the ratio between the normalized vector component in the direction of **|vi>** and the unit vector in the direction of **|vi>** which has a unit length!
+* The decimal numbers mentioned above are the ratio between the components of $|v_{norm}>$ in the direction of **|vi>**, and the unit vectors **|vi>** for $i \in [1,3]$
