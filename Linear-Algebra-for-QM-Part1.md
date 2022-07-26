@@ -508,6 +508,6 @@ v_n
 
 * Since the vector **|v>** consists of a group of complex numbers $v_1 \dots v_n$ and each of these complex numbers has a positive definite magnitude $|v_1| \dots |v_n|$ given by:
 
-$$ |v_i|=\sqrt(v_i^* \cdot v_i) \geq 0
+$$ |v_i|=\sqrt(v_i^* \cdot v_i) \geq 0 $$
 
 * Then it follows that the inner product of a vector with itself is positive definite number!
