@@ -511,3 +511,13 @@ v_n
 $$ |v_i|=\sqrt{v_i^* \cdot v_i} \geq 0 $$
 
 * Then it follows that the inner product of a vector with itself is positive definite number!
+* Let's think a little bit here about the meaning of a the inner product of a vector with itself. As we said before, the inner product returns the overlap length between two vectors. So if the two vectors are identical, then the inner product simply returns the square of this vector's length/magnitude!
+* So if we denote the length of a vector by **|| |v> ||** then we can write it down in terms of the inner product **<v|v>** as:
+
+$$ || |v> ||=\sqrt{(|v>, |v>)} $$
+
+* We say that a vector is **Normalized** whenever its inner product with itself returns **1**. This is to say that **|v>** is normalized when: 
+
+$$ || |v> ||=\sqrt{(|v>, |v>)}=1 $$
+
+
