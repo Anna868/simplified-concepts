@@ -495,4 +495,19 @@ $$ (|v>, |w>) = (\sum_{i=1}^n a_i|v_i>, |w>)=\sum_{i=1}^n(a_i|v_i>, |w>)=\sum_{i
 $$(|v>, |w>)=(|w>,|v>)^* $$ 
 * So when you change the vector order, you get the complex conjugate of the inner product result before changing the vector order.
 
-(3) The inner product of any vector **|v>** with itself **<v|v>** is a positive definite number  $(|v>, |v>)\geq 0 $ 
+**(3) The inner product of any vector |v> with itself <v|v> is a positive definite number** 
+* Let's compute the inner product of a vector with itself <v|v>:
+
+$$ (|v>, |v>)= \begin{pmatrix} v_1^* & v_2^* & \dots & v_n^* \end{pmatrix} 
+\cdot
+\begin{pmatrix}
+v_1 \\
+\vdots \\
+v_n
+\end{pmatrix} = \sum_{i=1}^n v^*_i \cdot v_i $$
+
+* Since the vector **|v>** consists of a group of complex numbers $v_1 \dots v_n$ and each of these complex numbers has a positive definite magnitude $|v_1| \dots |v_n|$ given by:
+
+$$ |v_i|=\sqrt(v_i^* \cdot v_i) \geq 0
+
+* Then it follows that the inner product of a vector with itself is positive definite number!
