@@ -38,5 +38,8 @@ Let's consider a more complicated example with two dimensions, so we have a vect
 { ${|u_1>,|v_2>}$ } with $|u_1>$ the vector representing the orthonormal basis for $\mathbf{V^1}$ from the last example and $|v_1>$ is a generic vector
 which is neither normalized nor orthogonal to $|u_1>$
 
-Note that for { ${|u_1>,|v_2>}$ } to form a basis set for $\mathbf{V^2}$, both vectors must be linearly independent, which means that they must have different
-directions in space as depicted below:
+Note that for { ${|u_1>,|v_2>}$ } to form a basis set for $\mathbf{V^2}$, both vectors must be linearly independent, which means that they must have different directions in space as depicted below. To geneeralize the argument, the angle $\theta$ between the two vectors is neither 0 nor is it 90 degrees.
+
+![1659717063860 (3)](https://user-images.githubusercontent.com/47701869/183122089-5f8b6bdd-8cfa-49b2-a0c7-235e6ffac2bd.jpg)
+
+We wish to replace $|v_2>$ with another vector $|w>$ which is orthogonal to $|u_1>$ as shown below:
