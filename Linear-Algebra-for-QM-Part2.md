@@ -75,3 +75,10 @@ is th orthonormal basis set discussed in the last example and $|v_3>$ is a third
 
 The plane drawn represents the vector space $\mathbf{V^2}$; it is created by the two vectors $|u_1>$ and $|u_2>$. The vector $|v_3>$ doesn't belong to the plane $\mathbf{V^2}$ since it is linearly independent of $|u_1>$ and $|u_2>$. Furthermore, the angle $\theta$ which the vector $|v_3>$ makes with the plane $\mathbf{V^2}$ is neither 0 nor 90 degrees since $|v_3>$ is not orthogonal to $|u_1>$ and $|u_2>$.
 
+We want to replace the vector $|v_3>$ with another vector $|y>$ which is orthogonal to the plane formed by $|u_1>$ and $|u_2>$, consequently $|y>$ would be orthogonal to both $|u_1>$ and $|u_2>$ as shown below
+
+![1659729753826 (1)](https://user-images.githubusercontent.com/47701869/183155766-fa10e47f-3b01-42c1-bf3f-3b0373b2e4d0.jpg)
+
+Once again, we can express $|v_3>$ as the sum of $|y>$ and the projection of $|v_3>$  unto the plane $\mathbf{V^2}$ which I will denote by $|p>$ so we can write:
+
+$$|v_3>=|y>+|p>$$
