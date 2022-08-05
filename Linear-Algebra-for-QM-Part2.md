@@ -82,3 +82,15 @@ We want to replace the vector $|v_3>$ with another vector $|y>$ which is orthogo
 Once again, we can express $|v_3>$ as the sum of $|y>$ and the projection of $|v_3>$  unto the plane $\mathbf{V^2}$ which I will denote by $|p>$ so we can write:
 
 $$|v_3>=|y>+|p>$$
+
+The projection vector $|p>$ is represented as the sum of the projections of $|v_3>$ on $|u_1>$ and $|u_2>$, hence:
+
+$$|p>=(|v_3>,|u_1>)|u_1>+(|v_3>,|u_2>)|u_2>$$
+
+So the orthogonal vector $|y>$ we are looking is given by:
+
+$$|y>=|v_3>-|p>=|v_3>-(|v_3>,|u_1>)|u_1>-(|v_3>,|u_2>)|u_2>$$
+
+Now we have an orthogonal basis set for $\mathbf{V^3}$ which is { $|u_1>, |u_2>, |y>$ }. However, this set is not orthonormal because $|y>$ is not normalized. Let $|u_3>$ be the normalized version of $|y>$ :
+
+$$|u_3>=\frac{|y>}{||y||}=\frac{|v_3>-(|v_3>,|u_1>)|u_1>-(|v_3>,|u_2>)|u_2>}{|||v_3>-(|v_3>,|u_1>)|u_1>-(|v_3>,|u_2>)|u_2>||}$$
