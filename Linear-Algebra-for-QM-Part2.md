@@ -43,3 +43,22 @@ Note that for { ${|u_1>,|v_2>}$ } to form a basis set for $\mathbf{V^2}$, both v
 ![1659717063860 (3)](https://user-images.githubusercontent.com/47701869/183122089-5f8b6bdd-8cfa-49b2-a0c7-235e6ffac2bd.jpg)
 
 We wish to replace $|v_2>$ with another vector $|w>$ which is orthogonal to $|u_1>$ as shown below:
+
+![1659721700596 (1)](https://user-images.githubusercontent.com/47701869/183133002-bf6db7a4-8250-4299-8d5a-870ba0042cd7.jpg)
+
+We can express the vector $|v_2>$ as $|w>+|x>$ where $|x>$ is a vector in the direction of $|u_1>$ and whose magnitude is the projection of $|v_2>$ unto $|u_1>$, which is simply the inner product $(|v_2>,|u_1>)$, hence:
+
+$$|x>=(|v_2>,|u_1>)|u_1>$$
+
+$$|v_2>=|w>+|x>$$
+
+So the vector $|w>$ we are looking for becomes simply:
+
+$$|w>=|v_2>-(|v_2>,|u_1>)|u_1>$$
+
+Since $|w>$ is a linear combination of { $|u_1>, |v_2>$ }, it is linearly independent of $|u_1>$ (You can check this by referring to the [last post](https://github.com/Anna868/simplified-concepts/blob/main/Linear-Algebra-for-QM-Part1.md) where I discussed the condition for linear independency!). 
+Furthermore, $|w>$ is now orthogonal to $|u_1>$. These two conditions are sufficient to say that the set of vectors { $|u_1>, |w>$ } is an orthogonal basis which spans $\mathbf{V^2}$, but is it also an *orthonormal* basis?
+
+The answer is no, since the vector $|w>$ has not been normalized. Recall that $|u_1>$ is already normalized, so the basis is orthonormal if only $|w>$ is also normalized. Let's denote the normalized version of $|w>$ by $|u_2>$ which is given by:
+
+$$|u_2>=\frac{|w>}{||w||}=\frac{|v_2>-(|v_2>,|u_1>)|u_1>}{|||v_2>-(|v_2>,|u_1>)|u_1>||}$$
