@@ -62,3 +62,11 @@ Furthermore, $|w>$ is now orthogonal to $|u_1>$. These two conditions are suffic
 The answer is no, since the vector $|w>$ has not been normalized. Recall that $|u_1>$ is already normalized, so the basis is orthonormal if only $|w>$ is also normalized. Let's denote the normalized version of $|w>$ by $|u_2>$ which is given by:
 
 $$|u_2>=\frac{|w>}{||w||}=\frac{|v_2>-(|v_2>,|u_1>)|u_1>}{|||v_2>-(|v_2>,|u_1>)|u_1>||}$$
+
+Now we have a vector basis { $|u_1>, |u_2>$ } which is completely orthonormal and spans $\mathbf{V^2}$. 
+
+Although this formalism in 2 dimensions helps us to understand the orthonormalization process, it may still not be clear how can we generalize this method to higher dimensions, so we will look at the formalism in 3 dimensions because it gives us an idea of how to generalize this method.
+
+### Example 3:
+Let's consider now a vector space $\mathbf{V^3}$ which is spanned by the following vector basis { $|u_1>, |u_2>, |v_3>$ } such that { $|u_1>, |u_2>$ }
+is th orthonormal basis set discussed in the last example and $|v_3>$ is a third vector which is linearly independent from both $|u_1>$ and $|u_2>$ but which is orthogonal on neither of these two vectors. This can be seen in the figure below:
