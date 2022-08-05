@@ -70,3 +70,8 @@ Although this formalism in 2 dimensions helps us to understand the orthonormaliz
 ### Example 3:
 Let's consider now a vector space $\mathbf{V^3}$ which is spanned by the following vector basis { $|u_1>, |u_2>, |v_3>$ } such that { $|u_1>, |u_2>$ }
 is th orthonormal basis set discussed in the last example and $|v_3>$ is a third vector which is linearly independent from both $|u_1>$ and $|u_2>$ but which is orthogonal on neither of these two vectors. This can be seen in the figure below:
+
+![1659724740516 (1)](https://user-images.githubusercontent.com/47701869/183141158-8b8c334e-5720-4460-a109-ebbc3b90a4e4.jpg)
+
+The plane drawn represents the vector space $\mathbf{V^2}$; it is created by the two vectors $|u_1>$ and $|u_2>$. The vector $|v_3>$ doesn't belong to the plane $\mathbf{V^2}$ since it is linearly independent of $|u_1>$ and $|u_2>$. Furthermore, the angle $\theta$ which the vector $|v_3>$ makes with the plane $\mathbf{V^2}$ is neither 0 nor 90 degrees since $|v_3>$ is not orthogonal to $|u_1>$ and $|u_2>$.
+
