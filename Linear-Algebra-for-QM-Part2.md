@@ -94,3 +94,22 @@ $$|y>=|v_3>-|p>=|v_3>-(|v_3>,|u_1>)|u_1>-(|v_3>,|u_2>)|u_2>$$
 Now we have an orthogonal basis set for $\mathbf{V^3}$ which is { $|u_1>, |u_2>, |y>$ }. However, this set is not orthonormal because $|y>$ is not normalized. Let $|u_3>$ be the normalized version of $|y>$ :
 
 $$|u_3>=\frac{|y>}{||y||}=\frac{|v_3>-(|v_3>,|u_1>)|u_1>-(|v_3>,|u_2>)|u_2>}{|||v_3>-(|v_3>,|u_1>)|u_1>-(|v_3>,|u_2>)|u_2>||}$$
+
+We can't really go on with more examples because it is impossible to visualize higher dimensions, but we can already guess (without visualization) what would happen if we want to obtain an orthonormal basis for $\mathbf{V^4}$ from the basis { $|u_1>,|u_2>,|u_3>, |v_4>$ }.
+We can guess right away that the new orthonormal basis would be { $|u_1>,|u_2>,|u_3>, |u_4>$ } with:
+
+$$|u_4>=\frac{|v_4>-(|v_4>,|u_1>)|u_1>-(|v_4>,|u_2>)|u_2>-(|v_4>,|u_3>)|u_3>}{|||v_4>-(|v_4>,|u_1>)|u_1>-(|v_4>,|u_2>)|u_2>-(|v_4>,|u_3>)|u_3>||}$$
+
+We can immediately realize the existence of a pattern in this formula which can be generalized to a vector space of **n** dimensions!
+
+### General Formula of Orthonormalization procedure:
+
+Suppose $|v_1>, \dots, |v_n>$ is a general vector basis for some vector space $\mathbf{V^n}$. Then we can use the **Gram-Schmidt Procedure** to obtain a new orthonormal basis set $|u_1>, \dots, |u_n>$ for the same vector space $\mathbf{V^n}$
+
+**Step 1:** Define the first element of the orthonormal basis as:
+
+$$|u_1>=\frac{|v_1>}{||v_1||}$$
+
+**Step 2:** Define the remaining elements of the orthonormal basis iteratively. For some index **k** in range $1\leq k \leq n-1$ define $|u_{k+1}>$ as:
+
+
