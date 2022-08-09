@@ -115,3 +115,14 @@ $$|u_1>=\frac{|v_1>}{||v_1||}$$
 $$|u'>=|v_{k+1}>-\sum_{i=1}^{k}(|u_i>,|v_{k+1}>)|u_i>$$
 
 $$|u_{k+1}>=\frac{|u'>}{||u'||}$$
+
+----
+
+## Outer Product Representation of Linear Operators:
+
+In the last post, [Part I of the Linear Algebra for QM](https://github.com/Anna868/simplified-concepts/blob/main/Linear-Algebra-for-QM-Part1.md) series, we introduced the idea of **Linear Operators** which are mapping functions that generally map a vector **|v>** in the vector space $\mathbf{V}$ to a different vector **|w>** in a different vector space $\mathbf{W}$ in a process symbolized by $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$
+
+In this section, a very useful representation of linear operators will be given using the notation of inner products. Paradoxically, this representation is known as the **Outer product** representation because it utilizes **Ket-Bra** vector multiplications **|v><w|** as well as **Bra-Ket** vector multiplications **<w|v>** 
+
+Suppose **|v>** is a vector in an inner product space $\mathbf{V}$ and **|w>** is a vector in an inner product space $\mathbf{W}$. We want to define the operation $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ as **|w><v|**. When the newly defined operator **|w><v|** acts on the vector **|v'>** in $\mathbf{V}$ we write it as:
+
