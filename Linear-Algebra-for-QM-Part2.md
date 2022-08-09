@@ -151,3 +151,5 @@ This is because:
 and we can rearrange the expression to have the summation outside the inner product as $\mathbf{\sum_{i}v_i}$**<i|i>**
 
 And since we are dealing with orthonormal basis, then **<j|i>=**$\mathbf{\delta_{ji}}$ such that $\mathbf{\delta_{ji}=0}$ for $\mathbf{j \neq i}$ and $\mathbf{\delta_{ji}=1}$ otherwise
+
+So indeed the inner product **<i|v>** returns only the complex coefficient $\mathbf{v_i}$ associated with the **ith** vector in the vector basis.
