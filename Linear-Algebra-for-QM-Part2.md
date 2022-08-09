@@ -140,7 +140,7 @@ Let **|i>** be any orthonormal basis for the vector space $\mathbf{V}$ so an arb
 
 $$|v>=\sum_i v_i|i>$$
 
-such that the index **i** runs from **1** to **n** and the **ith** vector in the basis, vector **|i>**, corresponds to a complex number $v_i$
+such that the index **i** runs from **1** to the dimension of the vector space given by **n**. The **ith** vector in the basis, vector **|i>**, corresponds to a complex number coefficient denoted by $\mathbf{v_i}$
 
 From the definition above, we can also write:
 **<i|v>=**$\mathbf{v_i}$ 
@@ -148,8 +148,14 @@ From the definition above, we can also write:
 This is because:
 **<i|v>=<i|**$\mathbf{\sum_{i}v_i}$**|i>**
 
-and we can rearrange the expression to have the summation outside the inner product as $\mathbf{\sum_{i}v_i}$**<i|i>**
+and we can rearrange the expression to have the summation and scalar multiplications outside the inner product as $\mathbf{\sum_{i}v_i}$**<i|i>**
 
 And since we are dealing with orthonormal basis, then **<j|i>=**$\mathbf{\delta_{ji}}$ such that $\mathbf{\delta_{ji}=0}$ for $\mathbf{j \neq i}$ and $\mathbf{\delta_{ji}=1}$ otherwise
 
-So indeed the inner product **<i|v>** returns only the complex coefficient $\mathbf{v_i}$ associated with the **ith** vector in the vector basis.
+So indeed the inner product **<i|v>** returns only the complex coefficient $\mathbf{v_i}$ associated with the **ith** vector in the vector basis. With this result, and the outer product representation of operators, we can show the **Completness Relation** for orthonormal vectors:
+
+For each vector **|i>** in the vector basis, let's define the operator **|i><i|** so for the entire basis, we can define the cumulative sum of operators:
+
+$\mathbf{\sum_i}$**|i><i|** which we can then apply on the vector **|v>** in the following manner:
+
+**|v>** $\mathbf{\sum_i}$ **|i><i|** = $\mathbf{\sum_i}$ **|i><i|v>** = $\mathbf{\sum_i v_i}$ **|i>** =**|v>** 
