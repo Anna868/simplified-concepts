@@ -126,3 +126,28 @@ In this section, a very useful representation of linear operators will be given 
 
 Suppose **|v>** is a vector in an inner product space $\mathbf{V}$ and **|w>** is a vector in an inner product space $\mathbf{W}$. We want to define the operation $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ as **|w><v|**. When the newly defined operator **|w><v|** acts on the vector **|v'>** in $\mathbf{V}$ we write it as:
 
+**(|w><v|)(|v'>)=|w>(<v|v'>)**
+
+The above expression can have one of two meanings:
+1) On the left handside of the equation, we can interpret **(|w><v|)(|v'>)** as the result of applying the operator **|w><v|** to the vector **|v'>**  
+1) On the right handside of the equation, we can interpret **|w>(<v|v'>)** as the result of multiplying the vector **|w>** by the inner product **<v|v'>**  
+
+The two expressions represent the same process $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$. The former is called the **Outer product** notation and the latter is called the **Inner product** notation.
+
+The outer product notation is very useful as it yields an important result which is the **Completness Relation** for orthonormal vectors. This relation simplifies a lot of linear algebraic calculations using orthonormal bases.
+
+Let **|i>** be any orthonormal basis for the vector space $\mathbf{V}$ so an arbitrary vector **|v>** can be written as:
+
+$$|v>=\sum_i v_i|i>$$
+
+such that the index **i** runs from **1** to **n** and the **ith** vector in the basis, vector **|i>**, corresponds to a complex number $v_i$
+
+From the definition above, we can also write:
+**<i|v>=**$\mathbf{v_i}$ 
+
+This is because:
+**<i|v>=<i|**$\mathbf{\sum_{i}v_i}$**|i>**
+
+and we can rearrange the expression to have the summation outside the inner product as $\mathbf{\sum_{i}v_i}$**<i|i>**
+
+And since we are dealing with orthonormal basis, then **<j|i>=**$\mathbf{\delta_{ji}}$ such that $\mathbf{\delta_{ji}=0}$ for $\mathbf{j \neq i}$ and $\mathbf{\delta_{ji}=1}$ otherwise
