@@ -112,4 +112,6 @@ $$|u_1>=\frac{|v_1>}{||v_1||}$$
 
 **Step 2:** Define the remaining elements of the orthonormal basis iteratively. For some index **k** in range $1\leq k \leq n-1$ define $|u_{k+1}>$ as:
 
+$$|u'>=|v_{k+1}>-\sum_{i=1}^{k}(|u_i>,|v_{k+1}>)|u_i>$$
 
+$$|u_{k+1}>=\frac{|u'>}{||u'||}$$
