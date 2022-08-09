@@ -159,3 +159,22 @@ For each vector **|i>** in the vector basis, let's define the operator **|i><i|*
 $\mathbf{\sum_i}$**|i><i|** which we can then apply on the vector **|v>** in the following manner:
 
 **|v>** $\mathbf{\sum_i}$ **|i><i|** = $\mathbf{\sum_i}$ **|i><i|v>** = $\mathbf{\sum_i v_i}$ **|i>** =**|v>** 
+
+This relation is known as the **Completness Relation** for orthonormal vectors and it implies that the representation for the **Identity Operator**, $\mathbf{I}$, for which the relation $\mathbf{I}$**|v>=|v>** holds true is given by:
+
+$\mathbf{I=\sum_i}$**|i><i|**
+
+One application of the completness relation is to give us a means by which we can represent any general linear operator $\mathbf{A}$ in the outer product notation.
+
+Suppose the linear operator you want to represent does the following process $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ such that:
+* $\mathbf{|v_i>}$ is an orthonormal basis for the vector space **V**
+* $\mathbf{|w_j>}$ is an orthonormal basis for the vector space **W**
+* With the general case that $j\neq i$ which means that the dimensionality of the vector spaces **V** and **W** are different
+
+Using the completness relations in both spaces **V** and **W** with the operator **A** gives us:
+
+$$\mathbf{A=I_{w}A=AI_w=I_{v}A=AI_v}$$
+
+So, for the process $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$, we can simply apply the completness relation twice, with the identity operator of the input vector space $\mathbf{I_v}$ perceding that of the output space $\mathbf{I_w}$:
+
+$\mathbf{A=I_{w}AI_v=(\sum_{j}|w_j}$ **><** $\mathbf{w_j|)A(\sum_{i}|v_i}$ **><** $\mathbf{v_i|)}$
