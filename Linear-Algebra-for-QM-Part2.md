@@ -6,7 +6,7 @@ In the last post, [Part I of the Linear Algebra for QM](https://github.com/Anna8
 we introduced the idea of vector bases and what it means for a set of vectors to span or cover an entire vector space.
 
 We also introduced what it means for a vector to be normalized (i.e. its magnitude is always 1) and what it means for two vectors to be orthogonal to
-each other (i.e. they do not overlap with each other and so their overlapping length is always 0)
+each other (i.e. their projection or overlapping length onto each other is always 0)
 
 In this section, we want to combine these ideas together to obtain a vector basis in which every vector is normalized and at the same time it is also orthogonal
 to all other vectors in the basis set.
