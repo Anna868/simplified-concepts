@@ -177,4 +177,6 @@ $$\mathbf{A=I_{w}A=AI_w=I_{v}A=AI_v}$$
 
 So, for the process $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$, we can simply apply the completness relation twice, with the identity operator of the input vector space $\mathbf{I_v}$ perceding that of the output space $\mathbf{I_w}$:
 
-$\mathbf{A=I_{w}AI_v=(\sum_{j}|w_j}$ **><** $\mathbf{w_j|)A(\sum_{i}|v_i}$ **><** $\mathbf{v_i|)}$
+$\mathbf{A=I_{w}AI_v=(\sum_{j}|w_j}$ **><** $\mathbf{w_j|)A(\sum_{i}|v_i}$ **><** $\mathbf{v_i|)}$= $\mathbf{\sum_{ij}|w_j}$ **><** $\mathbf{w_j|A|v_i}$ **><** $\mathbf{v_i|}$
+
+From the above expression, we can deduce that the matrix representation of the linear operator $\mathbf{A}$ defining the process $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ has the matrix elements **<** $\mathbf{w_j|A|v_i}$ **>** such that the index **i** refers to the columns and accesses the entries of the input space $\mathbf{V}$ and the index **j** refers to the rows and accesses the entries of the output space $\mathbf{W}$
