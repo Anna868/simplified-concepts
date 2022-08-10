@@ -205,7 +205,7 @@ $$Z=\sigma_z=\begin{pmatrix}
 0 & -1
 \end{pmatrix}$$
 
-And now we understand that these matrices could represent an operator in the two dimensional inner product space with an orthonormal basis given by:
+And now we understand that these matrices could represent operators in the two dimensional inner product space with an orthonormal basis given by:
 
 $$ |0>= \begin{pmatrix}
 0 \\
@@ -217,7 +217,7 @@ $$ |1>=\begin{pmatrix}
 0
 \end{pmatrix}$$
 
-We want to find the **Outer Product** representation of these operators using their matrix representations. For example we have already seen that the identity operator has an outer product expression given by the completness relation $\mathbf{I=\sum_i}$**|i><i|** and with a matrix representation given by $\sigma_0$
+We want to find the **Outer Product** representation of these operators using their matrix representations. For example we have already seen that the identity operator has an outer product expression given by the completness relation $\mathbf{I=\sum_i}$**|i><i|** and with a matrix representation given by $\sigma_0$. Similarly we want to find the outer product expression for $\sigma_x$, $\sigma_y$ and $\sigma_z$
 
 ### Solution:
 
@@ -227,17 +227,19 @@ We apply the identity operator twice and we get:
 
 $$\mathbf{\sigma_x}=\mathbf{I_{2}\sigma_{x}I_{1}}$$
 
-Notice that the subscript 1 or 2 indicates the input space and output space respectively. And we can expand this using finite summations as:
+Notice that the subscript 1 or 2 indicates the input space and the output space respectively.
 
-$\mathbf{I_{2}\sigma_{x}I_{1}}$ = $\mathbf{\sum_{ij}|v_j}$ **><** $\mathbf{v_j|\sigma_{x}|v_i}$ **><** $\mathbf{v_i|}$ with $\mathbf{|v_i>}$
+We can expand this expression using finite summations as:
 
-and $\mathbf{|v_j>}$ denote the input and output vector bases respectively with each index running from **1** to **2** 
+$\mathbf{I_{2}\sigma_{x}I_{1}}$ = $\mathbf{\sum_{ij}|v_j}$ **><** $\mathbf{v_j|\sigma_{x}|v_i}$ **><** $\mathbf{v_i|}$
+
+with $\mathbf{|v_i>}$ and $\mathbf{|v_j>}$ denoting the input and output vector bases respectively with each index, **i** and **j**, running from **0** to **1** 
 
 **For index j=0** we get:
 
-$\mathbf{\sum_{i0}|v_0}$ **><** $\mathbf{v_0|\sigma_{x}|v_i}$ **><** $\mathbf{v_i|}=\mathbf{|0}$ **>** 0 **<** $\mathbf{0|}$+ $\mathbf{|0}$ **>** 1 **<** $\mathbf{1|}$= $\mathbf{|0}$ **><** $\mathbf{1|}$ 
+$\mathbf{\sum_{i0}|v_0}$ **><** $\mathbf{v_0|\sigma_{x}|v_i}$ **><** $\mathbf{v_i|}=\mathbf{|0}$ **>** 0 **<** $\mathbf{0|}$+ $\mathbf{|0}$ **>** **<** $\mathbf{1|}$= $\mathbf{|0}$ **><** $\mathbf{1|}$ 
 
-Remember that the **j** indices stand for **rows** whereas **i** inidices stand for the **columns**. 
+Remember that the **j** indices stand for **rows** whereas **i** inidices stand for the **columns** so that the expression **<**  $\mathbf{v_0|\sigma_{x}|v_i}$ **>** refers to the entire **0th** row of $\sigma_x$
 
 Repeating **for index j=1** we get:
 
@@ -245,4 +247,30 @@ $\mathbf{\sum_{i1}|v_1}$ **><** $\mathbf{v_1|\sigma_{x}|v_i}$ **><** $\mathbf{v_
 
 Summing the two expression together, we can see that:
 
-$\mathbf{I_{2}\sigma_{x}I_{1}}$ = $\mathbf{|0}$ **><** $\mathbf{1|}$ + $\mathbf{|1}$ **><** $\mathbf{0|}$ = $\mathbf{\sum_{i}} \mathbf{|i}$ **><** $\mathbf{1-i|}$ 
+$\mathbf{I_{2}\sigma_{x}I_{1}}$ = $\mathbf{|0}$ **><** $\mathbf{1|}$ + $\mathbf{|1}$ **><** $\mathbf{0|}$ = $\mathbf{\sum_{j}} \mathbf{|j}$ **><** $\mathbf{1-j|}$ such that the index **j** runs from zero to 1
+
+The expression $\mathbf{\sum_{j}} \mathbf{|j}$ **><** $\mathbf{1-j|}$ is the desired **Outer product Representation** of $\mathbf{\sigma_x}$
+
+* For the pauli matrix $\mathbf{\sigma_y}$:
+
+We apply the identity operator twice and we get:
+
+$$\mathbf{\sigma_y}=\mathbf{I_{2}\sigma_{y}I_{1}}$$
+
+Notice that the subscript 1 or 2 indicates the input space and output space respectively. And we can expand this using finite summations as:
+
+$\mathbf{I_{2}\sigma_{y}I_{1}}$ = $\mathbf{\sum_{kj}|v_j}$ **><** $\mathbf{v_j|\sigma_{y}|v_k}$ **><** $\mathbf{v_k|}$ with $\mathbf{|v_k>}$ and $\mathbf{|v_j>}$ denoting the input and output vector bases respectively with each index **k** and **j** running from **0** to **1** . We use the letter **k** instead of the index **i** to avoid confusing the index with the complex numbers
+
+**For index j=0** we get:
+
+$\mathbf{\sum_{k0}|v_0}$ **><** $\mathbf{v_0|\sigma_{y}|v_k}$ **><** $\mathbf{v_k|}=\mathbf{|0}$ **>** 0 **<** $\mathbf{0|}$+ $\mathbf{|0}$ **>** -i **<** $\mathbf{1|}$= $\mathbf{-i|0}$ **><** $\mathbf{1|}$ 
+
+Remember that the **j** indices stand for **rows** whereas **i** inidices stand for the **columns**. 
+
+Repeating **for index j=1** we get:
+
+$\mathbf{\sum_{k1}|v_1}$ **><** $\mathbf{v_1|\sigma_{y}|v_k}$ **><** $\mathbf{v_k|}=\mathbf{|1}$ **>** i **<** $\mathbf{0|}$+ $\mathbf{|1}$ **>** 0 **<** $\mathbf{1|}$= $\mathbf{i|1}$ **><** $\mathbf{0|}$ 
+
+Summing the two expression together, we can see that:
+
+$\mathbf{I_{2}\sigma_{y}I_{1}}$ = $\mathbf{-i|0}$ **><** $\mathbf{1|}$ + $\mathbf{i|1}$ **><** $\mathbf{0|}$ = $\mathbf{\sum_{j}} \mathbf{(-1)^{j+1}i|j}$ **><** $\mathbf{1-j|}$ such that the index **j** runs from zero to 1 and **i** denotes imaginary numbers
