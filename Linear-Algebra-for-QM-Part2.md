@@ -277,3 +277,6 @@ $\mathbf{I_{2}\sigma_{y}I_{1}}$ = $\mathbf{-i|0}$ **><** $\mathbf{1|}$ + $\mathb
 
 The expression $\mathbf{\sum_{j}} \mathbf{(-1)^{j+1}i|j}$ **><** $\mathbf{1-j|}$ is the desired **Outer product Representation** of $\mathbf{\sigma_y}$. You can now attempt to find the expression corresponding to $\mathbf{\sigma_z}$ on your own :)
 
+----
+
+## Eigenvalues and Eigenvectors of Linear Operators:
