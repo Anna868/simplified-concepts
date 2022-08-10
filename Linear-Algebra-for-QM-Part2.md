@@ -280,3 +280,35 @@ The expression $\mathbf{\sum_{j}} \mathbf{(-1)^{j+1}i|j}$ **><** $\mathbf{1-j|}$
 ----
 
 ## Eigenvalues and Eigenvectors of Linear Operators:
+
+For each linear operator $\mathbf{A}$, there is a set of unique non-zero vectors which satsify the following relation:
+
+$$\mathbf{A} |v>=v|v>$$
+
+where $\mathbf{v}$ is a complex number known as the **Eigenvalue** and the special vector $\mathbf{|v>}$ is known as the **Eigenvector** or **Eigenstate** of operator $\mathbf{A}$
+
+To find the special set of eigenvectors of a particular operator $\mathbf{A}$, we need to first find the eigenvalues by solving the **characteristic equation** given by:
+
+ $$c(\lambda)=det(\mathbf{A}-\lambda\mathbf{I})$$
+ 
+ Here $\mathbf{I}$ is the identity operator and $det(.)$ denotes the determinant of a matrix which is a property that can only be calculated for square matrices.
+ 
+ Given a 2x2 matrix $\mathbf{A}$:
+ 
+ $$ A=\begin{pmatrix}
+a & b \\
+c & d
+\end{pmatrix}$$
+ 
+ Its determinant is given by:
+ 
+ $$det(\mathbf{A})=ad-bc$$
+ 
+ For square matrices with larger dimensions, finding the determinant becomes an iterative process that includes calculating determinants of 2x2 matrices in its simplest form. The figure below shows an example for calculating the symbolic determinant of a 3x3 matrix:
+ 
+ ![image](https://user-images.githubusercontent.com/47701869/183964206-633bd949-f3d8-4632-a21d-8d508694e006.png)
+
+The **characteristic equation** given by $c(\lambda)=det(\mathbf{A}-\lambda\mathbf{I})$ is solved for $c(\lambda)=0$ such that the roots of this equation are the eigenvalues of the operator $\mathbf{A}$.
+
+Since it is an algebraic fact that each polynomial expression of degree **n** has a number of roots **r** which characterized by $\mathbf{1\leq r \leq n}$ and the characteristic equation is one such polynomial expression, so it follows that **Each operator A has at least one eigenvalue and one corresponding eigenvector**
+ 
