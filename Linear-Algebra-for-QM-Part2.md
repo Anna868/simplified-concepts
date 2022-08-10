@@ -180,3 +180,69 @@ So, for the process $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$, we can simp
 $\mathbf{A=I_{w}AI_v=(\sum_{j}|w_j}$ **><** $\mathbf{w_j|)A(\sum_{i}|v_i}$ **><** $\mathbf{v_i|)}$= $\mathbf{\sum_{ij}|w_j}$ **><** $\mathbf{w_j|A|v_i}$ **><** $\mathbf{v_i|}$
 
 From the above expression, we can deduce that the matrix representation of the linear operator $\mathbf{A}$ defining the process $\mathbf{A}: \mathbf{V} \rightarrow \mathbf{W}$ has the matrix elements **<** $\mathbf{w_j|A|v_i}$ **>** such that the index **i** refers to the columns and accesses the entries of the input space $\mathbf{V}$ and the index **j** refers to the rows and accesses the entries of the output space $\mathbf{W}$
+
+### Example: 
+
+We have encountered in the [last post](https://github.com/Anna868/simplified-concepts/blob/main/Linear-Algebra-for-QM-Part1.md) the Pauli Matrices:
+
+$$ I=\sigma_0=\begin{pmatrix}
+1 & 0 \\
+0 & 1
+\end{pmatrix}$$
+
+$$ X= \sigma_x=\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}$$
+
+$$Y =\sigma_y= \begin{pmatrix}
+0 & -i \\
+i & 0 
+\end{pmatrix}$$
+
+$$Z=\sigma_z=\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}$$
+
+And now we understand that these matrices could represent an operator in the two dimensional inner product space with an orthonormal basis given by:
+
+$$ |0>= \begin{pmatrix}
+0 \\
+1
+\end{pmatrix}$$
+
+$$ |1>=\begin{pmatrix}
+1\\
+0
+\end{pmatrix}$$
+
+We want to find the **Outer Product** representation of these operators using their matrix representations. For example we have already seen that the identity operator has an outer product expression given by the completness relation $\mathbf{I=\sum_i}$**|i><i|** and with a matrix representation given by $\sigma_0$
+
+### Solution:
+
+* For the pauli matrix $\mathbf{\sigma_x}$:
+
+We apply the identity operator twice and we get:
+
+$$\mathbf{\sigma_x}=\mathbf{I_{2}\sigma_{x}I_{1}}$$
+
+Notice that the subscript 1 or 2 indicates the input space and output space respectively. And we can expand this using finite summations as:
+
+$\mathbf{I_{2}\sigma_{x}I_{1}}$ = $\mathbf{\sum_{ij}|v_j}$ **><** $\mathbf{v_j|\sigma_{x}|v_i}$ **><** $\mathbf{v_i|}$ with $\mathbf{|v_i>}$
+
+and $\mathbf{|v_j>}$ denote the input and output vector bases respectively with each index running from **1** to **2** 
+
+**For index j=0** we get:
+
+$\mathbf{\sum_{i0}|v_0}$ **><** $\mathbf{v_0|\sigma_{x}|v_i}$ **><** $\mathbf{v_i|}=\mathbf{|0}$ **>** 0 **<** $\mathbf{0|}$+ $\mathbf{|0}$ **>** 1 **<** $\mathbf{1|}$= $\mathbf{|0}$ **><** $\mathbf{1|}$ 
+
+Remember that the **j** indices stand for **rows** whereas **i** inidices stand for the **columns**. 
+
+Repeating **for index j=1** we get:
+
+$\mathbf{\sum_{i1}|v_1}$ **><** $\mathbf{v_1|\sigma_{x}|v_i}$ **><** $\mathbf{v_i|}=\mathbf{|1}$ **>** 1 **<** $\mathbf{0|}$+ $\mathbf{|1}$ **>** 0 **<** $\mathbf{1|}$= $\mathbf{|1}$ **><** $\mathbf{0|}$ 
+
+Summing the two expression together, we can see that:
+
+$\mathbf{I_{2}\sigma_{x}I_{1}}$ = $\mathbf{|0}$ **><** $\mathbf{1|}$ + $\mathbf{|1}$ **><** $\mathbf{0|}$ = $\mathbf{\sum_{i}} \mathbf{|i}$ **><** $\mathbf{1-i|}$ 
