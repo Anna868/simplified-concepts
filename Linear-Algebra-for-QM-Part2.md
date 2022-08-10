@@ -274,3 +274,6 @@ $\mathbf{\sum_{k1}|v_1}$ **><** $\mathbf{v_1|\sigma_{y}|v_k}$ **><** $\mathbf{v_
 Summing the two expression together, we can see that:
 
 $\mathbf{I_{2}\sigma_{y}I_{1}}$ = $\mathbf{-i|0}$ **><** $\mathbf{1|}$ + $\mathbf{i|1}$ **><** $\mathbf{0|}$ = $\mathbf{\sum_{j}} \mathbf{(-1)^{j+1}i|j}$ **><** $\mathbf{1-j|}$ such that the index **j** runs from zero to 1 and **i** denotes imaginary numbers
+
+The expression $\mathbf{\sum_{j}} \mathbf{(-1)^{j+1}i|j}$ **><** $\mathbf{1-j|}$ is the desired **Outer product Representation** of $\mathbf{\sigma_y}$. You can now attempt to find the expression corresponding to $\mathbf{\sigma_z}$ on your own :)
+
