@@ -312,3 +312,103 @@ The **characteristic equation** given by $c(\lambda)=det(\mathbf{A}-\lambda\math
 
 Since it is an algebraic fact that each polynomial expression of degree **n** has a number of roots **r** which characterized by $\mathbf{1\leq r \leq n}$ and the characteristic equation is one such polynomial expression, so it follows that **Each operator A has at least one eigenvalue and one corresponding eigenvector**
  
+### Example:
+Find the eigenvalues and eigenvectors of the pauli matrices given by:
+
+$$ X= \sigma_x=\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix}$$
+
+$$Y =\sigma_y= \begin{pmatrix}
+0 & -i \\
+i & 0 
+\end{pmatrix}$$
+
+$$Z=\sigma_z=\begin{pmatrix}
+1 & 0 \\
+0 & -1
+\end{pmatrix}$$
+
+### Solution:
+* For the pauli matrix $\mathbf{\sigma_x}$:
+Let's start by writing the characteristic equation:
+
+ $$c(\lambda)=det(\mathbf{\sigma_x}-\lambda\mathbf{I})=0$$
+ 
+ The matrix $\lambda\mathbf{I}$ is written as:
+ 
+ $$\lambda\mathbf{I}=\begin{pmatrix}
+\lambda & 0 \\
+0 & \lambda
+\end{pmatrix}$$
+
+Hence $\mathbf{\sigma_x}-\lambda\mathbf{I}$ is given by:
+
+$$\mathbf{\sigma_x}-\lambda\mathbf{I}=\begin{pmatrix}
+-\lambda & 1 \\
+1 & -\lambda
+\end{pmatrix}$$
+
+Then the characteristic equation amounts to:
+
+$$det(\mathbf{\sigma_x}-\lambda\mathbf{I})=\lambda^2-1=0$$
+
+This equation yields two eigenvalues $\mathbf{\lambda_1}=-1$ and $\mathbf{\lambda_2}=1$
+
+For $\mathbf{\lambda_1}=-1$, we revisit the eigenvector relation and write:
+
+$$\sigma_{x}|v_1>=\lambda_1|v_1>$$
+
+Let the vector $|v_1>$ be defined as:
+
+$$ |v_1>=\begin{pmatrix}
+a\\
+b
+\end{pmatrix} \forall (a,b) \in \mathbf{R}^2$$
+
+So the eigenvalue/eigenvector relation can be rewritten after substitution of $\sigma_x$ and $|v_1>$ and performing matrix multiplication as:
+
+$$\begin{pmatrix}
+0 & 1 \\
+1 & 0
+\end{pmatrix} \begin{pmatrix}
+a\\
+b
+\end{pmatrix}= \begin{pmatrix}
+b\\
+a
+\end{pmatrix} $$
+
+This result should also be equal to $\lambda_1|v_1>$, hence:
+
+$$\begin{pmatrix}
+b\\
+a
+\end{pmatrix} =\begin{pmatrix}
+-a\\
+-b
+\end{pmatrix}$$
+
+So we deduce that $a=-b$ and we find that that the corresponding eigenvector to $\lambda_1$ is given by:
+
+$$|v_1>=\begin{pmatrix}
+a\\
+-a
+\end{pmatrix} \forall a \in \mathbf{R}$$
+
+We then proceed to normalize the eigenvector so the final result would:
+
+$$|v_1>=\frac{1}{\sqrt{2} a}\begin{pmatrix}
+1\\
+-1
+\end{pmatrix} \forall a \in \mathbf{R}$$
+
+Similarly, the second eigenvector corresponding to $\mathbf{\lambda_2=1}$ can be found to be:
+
+$$|v_1>=\frac{1}{\sqrt{2} a}\begin{pmatrix}
+1\\
+1
+\end{pmatrix} \forall a \in \mathbf{R}$$
+
+A special property about the eigenvectors is that they span the space on which their operators has an effect, so in this example, $|v_1>$ and $|v_2>$ span the vector space $\mathbf{V^2}$ on which $\sigma_x$ operates. We can say that the eigenvectors form an orthonormal basis for the vector space. In the example above, you can verify that **<v2|v1>** is in fact equal to zero!
