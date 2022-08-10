@@ -406,9 +406,15 @@ $$|v_1>=\frac{1}{\sqrt{2} a}\begin{pmatrix}
 
 Similarly, the second eigenvector corresponding to $\mathbf{\lambda_2=1}$ can be found to be:
 
-$$|v_1>=\frac{1}{\sqrt{2} a}\begin{pmatrix}
+$$|v_2>=\frac{1}{\sqrt{2} a}\begin{pmatrix}
 1\\
 1
 \end{pmatrix} \forall a \in \mathbf{R}$$
 
 A special property about the eigenvectors is that they span the space on which their operators has an effect, so in this example, $|v_1>$ and $|v_2>$ span the vector space $\mathbf{V^2}$ on which $\sigma_x$ operates. We can say that the eigenvectors form an orthonormal basis for the vector space. In the example above, you can verify that **<v2|v1>** is in fact equal to zero!
+
+An important use of the eigenvectors and eigenvalues of an operator is to diagonalize the matrix representation of that operator. A diagonal representation of the operator $\mathbf{A}$ is given by:
+
+$\mathbf{A}=\lambda_i\sum_{i} |i>$ **<** $i|$
+
+where the vectors $|i>$ form an orthonormal set of eigenvectors for $\mathbf{A}$ with corresponding eigenvalues $\lambda_i$
