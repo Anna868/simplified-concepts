@@ -15,8 +15,9 @@ Such a basis set is better known as an **orthonormal vector basis** and it is ve
 So the objective of this section is to describe a linear algebraic procedure which converts a generic vector basis into an orthonormal basis for the same
 vector space. This procedure is known as the **Gram-Schmidt Procedure**
 
-Instead of presenting a rigorous proof of this procedure, I prefer to represent it through a set of examples which makes the logic of the method easier to grasp
-and to abstract in higher dimensions of vector spaces.
+Instead of presenting a rigorous proof of this procedure, I prefer to represent it through a set of examples which makes the logic of the method easier to grasp and to abstract in higher dimensions of vector spaces.
+
+**Note**: if you read this section and you are still struggling, then I suggest you watch [this video](https://www.youtube.com/watch?v=rHonltF77zI) which explains the same concepts in a more inteactive way.
 
 ### Example 1:
 Let's consider a one dimensional vector space $\mathbf{V^1}$ which geometrically represents a single line in space that can be represented by a single vector
